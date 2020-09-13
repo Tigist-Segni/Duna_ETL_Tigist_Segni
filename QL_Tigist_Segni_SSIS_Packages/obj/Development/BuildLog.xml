@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Tigist_Segni_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-07T01:01:26.0608192Z</LastWriteTime>
+    <LastWriteTime>2020-09-11T01:04:23.6415418Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Tigist_Segni_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-07T01:01:21.3137015Z</LastWriteTime>
+      <LastWriteTime>2020-09-11T18:59:46.4292109Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2020-09-05T20:18:26.0626659Z</LastWriteTime>
+      <Name>Pkg_Tigist_Segni_QuickenLoan 1.dtsx</Name>
+      <LastWriteTime>2020-09-13T19:19:51.7595576Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

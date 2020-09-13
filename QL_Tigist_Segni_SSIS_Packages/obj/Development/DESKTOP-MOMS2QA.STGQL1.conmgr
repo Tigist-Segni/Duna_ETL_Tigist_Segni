@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-MOMS2QA.STGQL1"
+  DTS:DTSID="{DD0F64FE-3F44-4472-A8D6-5C7139974F6A}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=STGQL;Integrated Security=True;Application Name=SSIS-Pkg_Tigist_Segni_LendingQB-{DD0F64FE-3F44-4472-A8D6-5C7139974F6A}DESKTOP-MOMS2QA.STGQL1;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
