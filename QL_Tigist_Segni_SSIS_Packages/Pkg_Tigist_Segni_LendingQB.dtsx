@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Tigist_Segni_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="140"
-  DTS:VersionGUID="{04EB11A3-969E-4149-A2DD-95C121EAFBB1}">
+  DTS:VersionBuild="171"
+  DTS:VersionGUID="{9CEC875B-DF1B-4121-8589-80F927E176B6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -149,6 +149,15 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{04EC8695-9F54-47B7-AFB0-03179E71F1BE}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{1DD37624-3793-46DB-ABB9-AD77C4DF3D29}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
@@ -156,7 +165,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/11/2020 2:59:46 PM</DTS:VariableValue>
+        DTS:DataType="7">9/15/2020 1:38:29 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -240,7 +249,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/11/2020 2:59:46 PM</DTS:VariableValue>
+        DTS:DataType="7">9/15/2020 1:38:29 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -6376,26 +6385,26 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull"
+              refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column_ReplaceNull"
+              name="Derived Column_ReplaceNull_Dunateak"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Inputs[Derived Column Input]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Inputs[Derived Column Input].Columns[Copy of MortgageInsuranceCompany]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input].Columns[Copy of MortgageInsuranceCompany]"
                       cachedDataType="wstr"
                       cachedLength="128"
                       cachedName="Copy of MortgageInsuranceCompany"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of MortgageInsuranceCompany]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Inputs[Derived Column Input].Columns[Copy of Copy of MortgageInsuranceCompany]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input].Columns[Copy of Copy of MortgageInsuranceCompany]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
@@ -6425,31 +6434,31 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Output]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Error Output]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6476,10 +6485,10 @@
                   expressionType="Notify"
                   name="MaxMemoryUsage" />
                 <property
-                  dataType="System.String"
+                  dataType="System.Null"
                   description="Specifies the name of the fuzzy-match index table to be reused or the table name in which a newly generated fuzzy-match index table will be written."
                   name="MatchIndexName"
-                  state="escaped">FuzzyLookupMatchIndex</property>
+                  state="escaped" />
                 <property
                   dataType="System.String"
                   description="Specifies the name of the reference table or view against which to match incoming records."
@@ -6500,7 +6509,7 @@
                 <property
                   dataType="System.Single"
                   description="Specifies the minimum similarity score required for the match results that the transformation returns."
-                  name="MinSimilarity">0.89</property>
+                  name="MinSimilarity">0</property>
                 <property
                   dataType="System.String"
                   description="Specifies the set of white-space and punctuation characters used to separate fuzzy match fields into the words used for matching and scoring a fuzzy lookup."
@@ -14221,40 +14230,6 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[Copy of Copy of ContentTypeID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Copy of Copy of ContentTypeID"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR.Outputs[Data Conversion Output].Columns[Copy of Copy of ContentTypeID]">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Name of the reference table column with which the input column should be matched."
-                          name="JoinToReferenceColumn"
-                          state="escaped" />
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the match is a fuzzy or an exact match."
-                          name="JoinType"
-                          typeConverter="tcJoinType">2</property>
-                        <property
-                          dataType="System.Single"
-                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                          name="MinSimilarity">0</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                          name="FuzzyComparisonFlags"
-                          typeConverter="tcComparisonFlags">1</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                          name="FuzzyComparisonFlagsEx"
-                          typeConverter="tcComparisonFlagsEx">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[Copy of Copy of ContentType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -15575,10 +15550,12 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceLookupID]"
-                      cachedDataType="i4"
-                      cachedName="MarketSourceLookupID"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceLookupID]">
+                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[OfficeId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="OfficeId"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Derived Column.Outputs[Derived Column Output].Columns[OfficeId]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -15607,12 +15584,12 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceName]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceCode]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="MarketSourceName"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]">
+                      cachedLength="1"
+                      cachedName="MarketSourceCode"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -21213,31 +21190,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of ContentTypeID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of ContentTypeID]"
-                      name="Copy of Copy of ContentTypeID">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the reference table column that is copied to the output for each match result."
-                          name="CopyFromReferenceColumn"
-                          state="escaped" />
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR.Outputs[Data Conversion Output].Columns[Copy of Copy of ContentTypeID]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the column is used to indicate confidence or similarity."
-                          name="ColumnType"
-                          typeConverter="tcColumnType">0</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of ContentType]"
                       codePage="1252"
                       dataType="str"
@@ -22207,12 +22159,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[OfficeId]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
-                      name="MarketSourceName">
+                      length="10"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[OfficeId]"
+                      name="OfficeId">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -22223,7 +22175,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_Odata\Derived Column.Outputs[Derived Column Output].Columns[OfficeId]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -22232,10 +22184,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceLookupID]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceLookupID]"
-                      name="MarketSourceLookupID">
+                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]"
+                      name="MarketSourceCode">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -22246,7 +22200,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceLookupID]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -22255,18 +22209,18 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany (1)]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]"
                       codePage="1252"
                       dataType="str"
                       length="128"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany (1)]"
-                      name="MortgageInsuranceCompany (1)">
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]"
+                      name="Insurance_Company">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the reference table column that is copied to the output for each match result."
                           name="CopyFromReferenceColumn"
-                          state="escaped">MortgageInsuranceCompany</property>
+                          state="escaped">Insurance_Company</property>
                         <property
                           containsID="true"
                           dataType="System.Null"
@@ -22335,11 +22289,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource"
+              refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup_MarcketSource"
+              name="Lookup_MarketSource"
               usesDispositions="true"
               version="6">
               <properties>
@@ -22370,7 +22324,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
                   name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">1</property>
+                  typeConverter="LookupNoMatchBehavior">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
@@ -22391,7 +22345,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MarketSource]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -22403,7 +22357,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
                   description="Connection manager used to access lookup data."
@@ -22411,16 +22365,16 @@ where [refTable].[MarketSourceCode] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Inputs[Lookup Input]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Inputs[Lookup Input].Columns[Copy of Copy of MortgageInsuranceCompany]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Inputs[Lookup Input].Columns[Copy of Copy of MarketSource]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of MortgageInsuranceCompany"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]">
+                      cachedLength="7"
+                      cachedName="Copy of Copy of MarketSource"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MarketSource]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -22438,70 +22392,57 @@ where [refTable].[MarketSourceCode] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Copy Column"
-                      length="100"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]"
-                      name="MarketSourceName"
+                      length="1"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]"
+                      name="MarketSourceCode"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">MarketSourceName</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceLookupID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output].Columns[MarketSourceLookupID]"
-                      name="MarketSourceLookupID"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">MarketSourceLookupID</property>
+                          name="CopyFromReferenceColumn">MarketSourceCode</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup No Match Output]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Error Output]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -22524,17 +22465,17 @@ where [refTable].[MarketSourceCode] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Multicast.Outputs[Multicast Output 1]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Multicast.Outputs[Multicast Output 2]"
                   deleteOutputOnPathDetached="true"
-                  name="Multicast Output 1"
+                  name="Multicast Output 2"
                   synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task_SharePoint_Odata\Multicast.Outputs[Multicast Output 2]"
+                  refId="Package\Data Flow Task_SharePoint_Odata\Multicast.Outputs[Multicast Output 1]"
                   dangling="true"
                   deleteOutputOnPathDetached="true"
-                  name="Multicast Output 2"
+                  name="Multicast Output 1"
                   synchronousInputId="Package\Data Flow Task_SharePoint_Odata\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
@@ -24519,11 +24460,17 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[BorrBirthDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CombinedLoanToValueRatio]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AppraisedValue]"
                       cachedDataType="r8"
-                      cachedName="CombinedLoanToValueRatio"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[CombinedLoanToValueRatio]" />
+                      cachedName="AppraisedValue"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[AppraisedValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AnnualPercentageRate]"
+                      cachedDataType="r8"
+                      cachedName="AnnualPercentageRate"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[AnnualPercentageRate]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CreditPullDate]"
                       cachedDataType="dbTimeStamp"
@@ -24775,6 +24722,20 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[UnderwriterLastName]" />
                     <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerFirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="101"
+                      cachedName="LoanOfficerFirstName"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerLastName]"
+                      cachedDataType="wstr"
+                      cachedLength="101"
+                      cachedName="LoanOfficerLastName"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]" />
+                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -24788,6 +24749,14 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="FundedTier"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[FundedTier]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LeadSourceType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="LeadSourceType"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LeadSourceType]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[loadBy]"
                       cachedCodepage="1252"
@@ -24818,22 +24787,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="Copy of Copy of AmortizationType"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of AmortizationType]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of AnnualPercentageRate]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of AnnualPercentageRate"
-                      cachedPrecision="23"
-                      cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of AnnualPercentageRate]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of AppraisedValue]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of AppraisedValue"
-                      cachedPrecision="23"
-                      cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of AppraisedValue]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of ApprovalStatus]"
                       cachedCodepage="1252"
@@ -24887,13 +24840,13 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of BorrLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of BorrNoYearsOnJob]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of BorrNoYearsOnJob]"
                       cachedDataType="numeric"
-                      cachedName="Copy of Copy of BorrNoYearsOnJob"
+                      cachedName="Copy of BorrNoYearsOnJob"
                       cachedPrecision="24"
                       cachedScale="10"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of BorrNoYearsOnJob]" />
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of BorrNoYearsOnJob]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of BorrState]"
                       cachedCodepage="1252"
@@ -24903,13 +24856,13 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of BorrState]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of BorTotalIncome]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of BorTotalIncome]"
                       cachedDataType="numeric"
-                      cachedName="Copy of BorTotalIncome"
+                      cachedName="Copy of Copy of BorTotalIncome"
                       cachedPrecision="26"
                       cachedScale="10"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of BorTotalIncome]" />
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of BorTotalIncome]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of BorrZip]"
                       cachedCodepage="1252"
@@ -24927,14 +24880,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of BottomQualificationRatios]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Closer_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of Closer_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Closer_Name]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserFirst Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -24943,6 +24888,22 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[CloserFirst Name]" />
                     <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Closer_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Copy of Copy of Closer_Name"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Closer_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of CombinedLoanToValueRatio]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of CombinedLoanToValueRatio"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of CombinedLoanToValueRatio]" />
+                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of CurrentMilestone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -24950,38 +24911,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="Copy of Copy of CurrentMilestone"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of CurrentMilestone]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of FinallCreditScore]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of FinallCreditScore"
-                      cachedPrecision="24"
-                      cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of FinallCreditScore]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of HouseOnSaleState]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of HouseOnSaleState"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of HouseOnSaleState]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of HouseOnSaleStreet]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="159"
-                      cachedName="Copy of Copy of HouseOnSaleStreet"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of HouseOnSaleStreet]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of HouseOnSaleZip]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of HouseOnSaleZip"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of HouseOnSaleZip]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of InterstRate]"
                       cachedDataType="numeric"
@@ -25023,21 +24952,13 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of LeadID]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of LeadSource]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Loan_Processor_Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
-                      cachedName="Copy of Copy of LeadSource"
+                      cachedLength="128"
+                      cachedName="Copy of Copy of Loan_Processor_Name"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of LeadSource]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LeadSourceType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="LeadSourceType"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LeadSourceType]" />
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Loan_Processor_Name]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of LoanID]"
                       cachedCodepage="1252"
@@ -25053,6 +24974,13 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="Copy of LoanOfficerEmail"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of LoanOfficerEmail]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of LoanOfficer]"
+                      cachedDataType="wstr"
+                      cachedLength="101"
+                      cachedName="Copy of LoanOfficer"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of LoanOfficer]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of LoanProgram]"
                       cachedCodepage="1252"
@@ -25174,14 +25102,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of TopQualificationRatios]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of TotalFees]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of TotalFees"
-                      cachedPrecision="27"
-                      cachedScale="13"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of TotalFees]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of TotalLoanAmt]"
                       cachedDataType="numeric"
                       cachedName="Copy of TotalLoanAmt"
@@ -25189,6 +25109,14 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedScale="10"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of TotalLoanAmt]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Underwriter_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Copy of Copy of Underwriter_Name"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Underwriter_Name]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of UnderwriterRiskAssess]"
                       cachedCodepage="1252"
@@ -25204,50 +25132,61 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
                       lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[UnderwrittingReceivedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerFirstName]"
-                      cachedDataType="wstr"
-                      cachedLength="101"
-                      cachedName="LoanOfficerFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]" />
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of TotalFees]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of Copy of TotalFees"
+                      cachedPrecision="27"
+                      cachedScale="13"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of TotalFees]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceName]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of FinallCreditScore]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of FinallCreditScore"
+                      cachedPrecision="24"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of FinallCreditScore]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of HouseOnSaleState]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="MarketSourceName"
+                      cachedLength="128"
+                      cachedName="Copy of Copy of HouseOnSaleState"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of HouseOnSaleState]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of HouseOnSaleStreet]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="159"
+                      cachedName="Copy of Copy of HouseOnSaleStreet"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of HouseOnSaleStreet]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of HouseOnSaleZip]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Copy of Copy of HouseOnSaleZip"
+                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of HouseOnSaleZip]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MarketSourceCode"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketsourceName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]" />
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Underwriter_Name]"
+                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of LoanOfficer]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of Underwriter_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Underwriter_Name]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Loan_Processor_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of Loan_Processor_Name"
+                      cachedLength="101"
+                      cachedName="Copy of Copy of LoanOfficer"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Loan_Processor_Name]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of LoanOfficer]"
-                      cachedDataType="wstr"
-                      cachedLength="101"
-                      cachedName="Copy of LoanOfficer"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of LoanOfficer]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerLastName]"
-                      cachedDataType="wstr"
-                      cachedLength="101"
-                      cachedName="LoanOfficerLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
-                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]" />
+                      lineageId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of LoanOfficer]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -25870,22 +25809,22 @@ where [refTable].[MarketSourceCode] = ?</property>
               refId="Package\Data Flow Task_SharePoint_Odata.Paths[Derived Column Output1]"
               endId="Package\Data Flow Task_SharePoint_Odata\Row Count.Inputs[Row Count Input 1]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Outputs[Derived Column Output]" />
+              startId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task_SharePoint_Odata.Paths[Fuzzy Lookup Output]"
-              endId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull.Inputs[Derived Column Input]"
+              endId="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input]"
               name="Fuzzy Lookup Output"
               startId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output]" />
             <path
               refId="Package\Data Flow Task_SharePoint_Odata.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Outputs[Lookup Match Output]" />
+              startId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task_SharePoint_Odata.Paths[Multicast Output 1]"
-              endId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource.Inputs[Lookup Input]"
-              name="Multicast Output 1"
-              startId="Package\Data Flow Task_SharePoint_Odata\Multicast.Outputs[Multicast Output 1]" />
+              refId="Package\Data Flow Task_SharePoint_Odata.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource.Inputs[Lookup Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task_SharePoint_Odata\Multicast.Outputs[Multicast Output 2]" />
             <path
               refId="Package\Data Flow Task_SharePoint_Odata.Paths[Output]"
               endId="Package\Data Flow Task_SharePoint_Odata\Conditional Split.Inputs[Conditional Split Input]"
@@ -25913,7 +25852,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B4C9166D-91DF-496E-AEBD-3FC1B0459AF3}"
+          SQLTask:Connection="{69399414-DBF0-4099-8308-4FC1E71269FA}"
           SQLTask:SqlStatementSource="Delete from[dbo].[stg_Tigist_Segni_QL]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -25930,50 +25869,49 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{9D94AFCF-D93B-4B0D-8E1B-55C81818DA0C}"
-          SQLTask:IsStoredProc="True"
+          SQLTask:Connection="{820A78AA-2109-48BA-A392-D558DA461AD3}"
           SQLTask:SqlStatementSource="DECLARE&#xA; &#x9;@PackageID uniqueidentifier  ,&#xA;&#x9;@PackageName varchar(500)  ,&#xA;&#x9;@SourceName varchar(100) ,&#xA;&#x9;@Runtime datetime ,&#xA;&#x9;@RunBy varchar(100) ,&#xA;&#x9;@NumberOfRowsInserted int ,&#xA;&#x9;@LastModifiedDate datetime &#xA;&#xA;&#x9;  &#xA;&#x9;SET @PackageID     =  ?&#xA;&#x9;SET @PackageName    =  ?&#xA;&#x9;SET @SourceName  =  ?&#xA;&#x9;SET @Runtime  =  ?&#xA;&#x9;SET @RunBy    =  ?&#xA;&#x9;SET @NumberOfRowsInserted    =  ?&#xA;&#x9;SET @LastModifiedDate  =  ?&#xA; &#xA;&#xA; EXEC uspQuicken_Loans_ETL_Log &#xA;&#x9;@PackageID    ,&#xA;&#x9;@PackageName    ,&#xA;&#x9;@SourceName   ,&#xA;&#x9;@Runtime  ,&#xA;&#x9;@RunBy   ,&#xA;&#x9;@NumberOfRowsInserted   ,&#xA;&#x9;@LastModifiedDate " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@PackageID"
+            SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="System::PackageID"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="9"
+            SQLTask:DataType="72"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@PackageName"
+            SQLTask:ParameterName="1"
             SQLTask:DtsVariableName="System::PackageName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@SourceName"
+            SQLTask:ParameterName="2"
             SQLTask:DtsVariableName="User::VarSourceName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@Runtime"
+            SQLTask:ParameterName="3"
             SQLTask:DtsVariableName="User::VarTimeStamp"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="6"
+            SQLTask:DataType="7"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@RunBy"
+            SQLTask:ParameterName="4"
             SQLTask:DtsVariableName="System::MachineName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@NumberOfRowsInserted"
+            SQLTask:ParameterName="5"
             SQLTask:DtsVariableName="User::VarRowCount"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
+            SQLTask:DataType="3"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@LastModifiedDate"
+            SQLTask:ParameterName="6"
             SQLTask:DtsVariableName="User::VarLastModifiedDate"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="6"
+            SQLTask:DataType="7"
             SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
@@ -25991,13 +25929,13 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B4C9166D-91DF-496E-AEBD-3FC1B0459AF3}"
-          SQLTask:SqlStatementSource="SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;    FROM  [dbo].[Stg_Tigist_Segni_QL]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:Connection="{69399414-DBF0-4099-8308-4FC1E71269FA}"
+          SQLTask:SqlStatementSource="SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA; FROM[dbo].[stg_Tigist_Segni_QL]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::VarSourceName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
@@ -26062,49 +26000,49 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{9D94AFCF-D93B-4B0D-8E1B-55C81818DA0C}"
+              SQLTask:Connection="{820A78AA-2109-48BA-A392-D558DA461AD3}"
               SQLTask:SqlStatementSource="DECLARE @PackageID uniqueidentifier &#xA;       ,@PackageName  Varchar(100) &#xA;&#x9;   ,@SourceName  Varchar(100) &#xA;&#x9;   ,@LoadDate  Datetime   &#xA;&#x9;   ,@RunBy   Varchar(100) &#xA;&#x9;   ,@ErrorCode  Varchar(100) &#xA;&#x9;   ,@ErrorDescription  Varchar(Max)  &#xA;SET @PackageID =? &#xA;SET @PackageName =?  &#xA;SET @SourceName   =? &#xA;SET @LoadDate   =? &#xA;SET @RunBy =? &#xA;SET @ErrorCode   =? &#xA;SET @ErrorDescription    =?  &#xA;EXEC  uspQuicken_Loans_ETL_Error_Log&#xA; &#xA;           @PackageID   &#xA;&#x9;&#x9;   ,@PackageName    &#xA;&#x9;&#x9;   ,@SourceName     &#xA;&#x9;&#x9;   ,@LoadDate     &#xA;&#x9;&#x9;   ,@RunBy      &#xA;&#x9;&#x9;   ,@ErrorCode    &#xA;&#x9;&#x9;   ,@ErrorDescription&#xA; &#xA;                                               " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="System::PackageID"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="9"
+                SQLTask:DataType="72"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
                 SQLTask:DtsVariableName="System::PackageName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="2"
                 SQLTask:DtsVariableName="System::SourceName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="3"
                 SQLTask:DtsVariableName="User::VarTimeStamp"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="5"
+                SQLTask:DataType="7"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="4"
                 SQLTask:DtsVariableName="System::MachineName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="5"
                 SQLTask:DtsVariableName="System::ErrorCode"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="7"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="6"
                 SQLTask:DtsVariableName="System::ErrorDescription"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
@@ -26907,7 +26845,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="257.6,41.6"
           Id="Package\Execute SQL Task_LastModified_Date"
-          TopLeft="484.166647427613,165.533334648875" />
+          TopLeft="484.999980727833,167.266667995984" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="398.18570844081,52.3568630118336">
@@ -26944,18 +26882,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="383.299997175876,184.447060447072">
+          TopLeft="383.299997175876,185.313727120626">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="100.866650251737,0"
+              EndConnector="101.699983551957,0"
               Start="0,0"
-              End="93.3666502517368,0">
+              End="94.1999835519567,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="93.3666502517368,0" />
+                    End="94.1999835519567,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26966,30 +26904,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="612.966647427613,207.133334648875">
+          TopLeft="613.799980727833,208.866667995984">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-313.689667639987,70.1320282726064"
+              EndConnector="-314.523000940207,68.3986949254974"
               Start="0,0"
-              End="-313.689667639987,62.6320282726064">
+              End="-314.523000940207,60.8986949254974">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.0660141363032" />
+                    End="0,30.1993474627487" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.0660141363032"
-                    Point2="0,35.0660141363032"
-                    Point3="-4,35.0660141363032" />
+                    Point1="0,30.1993474627487"
+                    Point2="0,34.1993474627487"
+                    Point3="-4,34.1993474627487" />
                   <mssgle:LineSegment
-                    End="-309.689667639987,35.0660141363032" />
+                    End="-310.523000940207,34.1993474627487" />
                   <mssgle:CubicBezierSegment
-                    Point1="-309.689667639987,35.0660141363032"
-                    Point2="-313.689667639987,35.0660141363032"
-                    Point3="-313.689667639987,39.0660141363032" />
+                    Point1="-310.523000940207,34.1993474627487"
+                    Point2="-314.523000940207,34.1993474627487"
+                    Point3="-314.523000940207,38.1993474627487" />
                   <mssgle:LineSegment
-                    End="-313.689667639987,62.6320282726064" />
+                    End="-314.523000940207,60.8986949254974" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27005,7 +26943,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="241.6,41.6"
           Id="Package.EventHandlers[OnError]\Execute SQL Task_ETL_Error_Log"
@@ -27045,7 +26983,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27069,257 +27009,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="120,41.6"
-          Id="Package\Data Flow Task_SharePoint_Odata\Multicast"
-          TopLeft="825.801584775262,306.922876683017" />
-        <NodeLayout
           Size="260,41.6"
           Id="Package\Data Flow Task_SharePoint_Odata\Data Conversion_DT-WSTR -NUMERIC"
-          TopLeft="503.460309050341,179.411766651107" />
-        <NodeLayout
-          Size="280,41.6"
-          Id="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany"
-          TopLeft="406.000008145967,440.555555103267" />
-        <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull"
-          TopLeft="498.266648520364,559.400001343092" />
+          TopLeft="43.4603273290981,146.478433056043" />
         <NodeLayout
           Size="260.8,41.6"
           Id="Package\Data Flow Task_SharePoint_Odata\OData Source"
-          TopLeft="506.833324018926,1.40261452630742" />
+          TopLeft="62.6666750018563,42.1359481833602" />
         <NodeLayout
-          Size="188,41.6"
-          Id="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource"
-          TopLeft="804.158737600976,436.005232703474" />
-        <NodeLayout
-          Size="240,41.6"
+          Size="152.8,41.6"
           Id="Package\Data Flow Task_SharePoint_Odata\Derived Column"
-          TopLeft="511.178563370796,348.320591101592" />
+          TopLeft="67.0119143537261,244.320590275074" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination"
-          TopLeft="175.944441386948,633.051968486337" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Task_SharePoint_Odata\Row Count"
-          TopLeft="222.777768925385,540.644446825275" />
+          Size="120,41.6"
+          Id="Package\Data Flow Task_SharePoint_Odata\Multicast"
+          TopLeft="779.968253263182,249.722876228432" />
         <NodeLayout
           Size="153.6,41.6"
           Id="Package\Data Flow Task_SharePoint_Odata\Conditional Split"
-          TopLeft="560.27775551434,79.0444448416322" />
+          TopLeft="681.111084046188,35.7111111639165" />
         <NodeLayout
           Size="242.4,41.6"
           Id="Package\Data Flow Task_SharePoint_Odata\Data Conversion_STRING_DR_STR"
-          TopLeft="506.75395963202,260.946408319231" />
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Row Count Output 1]"
-          TopLeft="287.577768925385,582.244446825275">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-26.4333275384371,50.8075216610619"
-              Start="0,0"
-              End="-26.4333275384371,43.3075216610619">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.4037608305309" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.4037608305309"
-                    Point2="0,25.4037608305309"
-                    Point3="-4,25.4037608305309" />
-                  <mssgle:LineSegment
-                    End="-22.4333275384371,25.4037608305309" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.4333275384371,25.4037608305309"
-                    Point2="-26.4333275384371,25.4037608305309"
-                    Point3="-26.4333275384371,29.4037608305309" />
-                  <mssgle:LineSegment
-                    End="-26.4333275384371,43.3075216610619" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Output]"
-          TopLeft="637.155539766633,43.0026145263074">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.0418303153248"
-              Start="0,0"
-              End="0,28.5418303153248">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5418303153248" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Multicast Output 1]"
-          TopLeft="885.801584775262,348.522876683017">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="12.3571528257137,87.4823560204568"
-              Start="0,0"
-              End="12.3571528257137,79.9823560204568">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.7411780102284" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39.7411780102284"
-                    Point2="0,43.7411780102284"
-                    Point3="4,43.7411780102284" />
-                  <mssgle:LineSegment
-                    End="8.35715282571368,43.7411780102284" />
-                  <mssgle:CubicBezierSegment
-                    Point1="8.35715282571368,43.7411780102284"
-                    Point2="12.3571528257137,43.7411780102284"
-                    Point3="12.3571528257137,47.7411780102284" />
-                  <mssgle:LineSegment
-                    End="12.3571528257137,79.9823560204568" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Lookup Match Output]"
-          TopLeft="804.158737600976,459.08039390337">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-118.158729455008,0"
-              Start="0,0"
-              End="-110.658729455008,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-110.658729455008,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-103.520751446254,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Fuzzy Lookup Output]"
-          TopLeft="546.000008145967,482.155555103267">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="59.8666403743971,77.2444462398249"
-              Start="0,0"
-              End="59.8666403743971,69.7444462398249">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.6222231199125" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.6222231199125"
-                    Point2="0,38.6222231199125"
-                    Point3="4,38.6222231199125" />
-                  <mssgle:LineSegment
-                    End="55.8666403743971,38.6222231199125" />
-                  <mssgle:CubicBezierSegment
-                    Point1="55.8666403743971,38.6222231199125"
-                    Point2="59.8666403743971,38.6222231199125"
-                    Point3="59.8666403743971,42.6222231199125" />
-                  <mssgle:LineSegment
-                    End="59.8666403743971,69.7444462398249" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Derived Column Output1]"
-          TopLeft="498.266648520364,580.200001343092">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-145.88887959498,-18.7555545178162"
-              Start="0,0"
-              End="-138.38887959498,-18.7555545178162">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-68.9444397974898,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-68.9444397974898,0"
-                    Point2="-72.9444397974898,0"
-                    Point3="-72.9444397974898,-4" />
-                  <mssgle:LineSegment
-                    End="-72.9444397974898,-14.7555545178162" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-72.9444397974898,-14.7555545178162"
-                    Point2="-72.9444397974898,-18.7555545178162"
-                    Point3="-76.9444397974898,-18.7555545178162" />
-                  <mssgle:LineSegment
-                    End="-138.38887959498,-18.7555545178162" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="665.920619973972,139.613074021627" />
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_Odata.Paths[Derived Column Output]"
-          TopLeft="751.178563370796,369.120591101592">
+          TopLeft="219.811914353726,267.821733251753">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="74.623021404466,-41.3977144185743"
+              EndConnector="560.156338909455,0"
               Start="0,0"
-              End="67.123021404466,-41.3977144185743">
+              End="552.656338909455,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="33.311510702233,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33.311510702233,0"
-                    Point2="37.311510702233,0"
-                    Point3="37.311510702233,-4" />
-                  <mssgle:LineSegment
-                    End="37.311510702233,-37.3977144185743" />
-                  <mssgle:CubicBezierSegment
-                    Point1="37.311510702233,-37.3977144185743"
-                    Point2="37.311510702233,-41.3977144185743"
-                    Point3="41.311510702233,-41.3977144185743" />
-                  <mssgle:LineSegment
-                    End="67.123021404466,-41.3977144185743" />
+                    End="552.656338909455,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27330,18 +27056,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_Odata.Paths[Data Conversion Output1]"
-          TopLeft="629.566261501408,302.546408319231">
+          TopLeft="787.120619973972,181.213074021627">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.7741827823602"
+              EndConnector="-643.708705620246,63.1075162534472"
               Start="0,0"
-              End="0,38.2741827823602">
+              End="-643.708705620246,55.6075162534472">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.2741827823602" />
+                    End="0,27.5537581267236" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5537581267236"
+                    Point2="0,31.5537581267236"
+                    Point3="-4,31.5537581267236" />
+                  <mssgle:LineSegment
+                    End="-639.708705620246,31.5537581267236" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-639.708705620246,31.5537581267236"
+                    Point2="-643.708705620246,31.5537581267236"
+                    Point3="-643.708705620246,35.5537581267236" />
+                  <mssgle:LineSegment
+                    End="-643.708705620246,55.6075162534472" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27352,18 +27090,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_Odata.Paths[Data Conversion Output]"
-          TopLeft="630.707134341181,221.011766651107">
+          TopLeft="303.460327329098,163.845753538835">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.9346416681248"
+              EndConnector="362.460292644874,0"
               Start="0,0"
-              End="0,32.4346416681248">
+              End="354.960292644874,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.4346416681248" />
+                    End="354.960292644874,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27374,31 +27112,256 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_Odata.Paths[BorrFirstorLastName_NotTest]"
-          TopLeft="635.269032282341,120.644444841632">
+          TopLeft="757.911084046188,77.3111111639165">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,58.7673218094744"
+              EndConnector="-584.45075671709,69.1673218921266"
               Start="0,0"
-              End="0,51.2673218094744">
+              End="-584.45075671709,61.6673218921266">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.2673218094744" />
+                    End="0,30.5836609460633" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.5836609460633"
+                    Point2="0,34.5836609460633"
+                    Point3="-4,34.5836609460633" />
+                  <mssgle:LineSegment
+                    End="-580.45075671709,34.5836609460633" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-580.45075671709,34.5836609460633"
+                    Point2="-584.45075671709,34.5836609460633"
+                    Point3="-584.45075671709,38.5836609460633" />
+                  <mssgle:LineSegment
+                    End="-584.45075671709,61.6673218921266" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-65.55638671875,20.2415710609872,131.1127734375,10.7841796875"
+              BoundingBox="-357.781765077295,39.5836609460633,131.1127734375,10.7841796875"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Output]"
+          TopLeft="323.466675001856,59.7235296736383">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="357.644409044332,0"
+              Start="0,0"
+              End="350.144409044332,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="350.144409044332,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource"
+          TopLeft="109.999995628993,334.533335991966" />
+        <NodeLayout
+          Size="280,41.6"
+          Id="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany"
+          TopLeft="730.833304292627,336.266669339074" />
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Multicast Output 2]"
+          TopLeft="839.968253263182,291.322876228432">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-638.368257634189,43.2104597635332"
+              Start="0,0"
+              End="-638.368257634189,35.7104597635332">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.6052298817666" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.6052298817666"
+                    Point2="0,21.6052298817666"
+                    Point3="-4,21.6052298817666" />
+                  <mssgle:LineSegment
+                    End="-634.368257634189,21.6052298817666" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-634.368257634189,21.6052298817666"
+                    Point2="-638.368257634189,21.6052298817666"
+                    Point3="-638.368257634189,25.6052298817666" />
+                  <mssgle:LineSegment
+                    End="-638.368257634189,35.7104597635332" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Lookup Match Output]"
+          TopLeft="293.199995628993,356.20000266552">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="437.633308663634,0"
+              Start="0,0"
+              End="430.133308663634,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="430.133308663634,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="166.875267613067,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="264.8,41.6"
+          Id="Package\Data Flow Task_SharePoint_Odata\Derived Column_ReplaceNull_Dunateak"
+          TopLeft="71.2962934632363,428.518521924078" />
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Fuzzy Lookup Output]"
+          TopLeft="870.833304292627,377.866669339074">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-667.137010829391,50.6518525850038"
+              Start="0,0"
+              End="-667.137010829391,43.1518525850038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.3259262925019" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.3259262925019"
+                    Point2="0,25.3259262925019"
+                    Point3="-4,25.3259262925019" />
+                  <mssgle:LineSegment
+                    End="-663.137010829391,25.3259262925019" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-663.137010829391,25.3259262925019"
+                    Point2="-667.137010829391,25.3259262925019"
+                    Point3="-667.137010829391,29.3259262925019" />
+                  <mssgle:LineSegment
+                    End="-667.137010829391,43.1518525850038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Data Flow Task_SharePoint_Odata\Row Count"
+          TopLeft="822.222189550048,434.296299747773" />
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Derived Column Output1]"
+          TopLeft="336.096293463236,452.207410835925">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="486.125896086812,0"
+              Start="0,0"
+              End="478.625896086812,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="478.625896086812,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Task_SharePoint_Odata\OLE DB Destination"
+          TopLeft="110.185180806819,534.444448691827" />
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_Odata.Paths[Row Count Output 1]"
+          TopLeft="887.022189550048,475.896299747773">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-691.237008743228,58.5481489440542"
+              Start="0,0"
+              End="-691.237008743228,51.0481489440542">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.2740744720271" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.2740744720271"
+                    Point2="0,29.2740744720271"
+                    Point3="-4,29.2740744720271" />
+                  <mssgle:LineSegment
+                    End="-687.237008743228,29.2740744720271" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-687.237008743228,29.2740744720271"
+                    Point2="-691.237008743228,29.2740744720271"
+                    Point3="-691.237008743228,33.2740744720271" />
+                  <mssgle:LineSegment
+                    End="-691.237008743228,51.0481489440542" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task_SharePoint_Odata\Lookup_MarketSource">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[MarketLookupTable]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task_SharePoint_Odata\Fuzzy Lookup_MorgageInsuranceCompany">
     <Properties>
@@ -27409,29 +27372,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task_SharePoint_Odata\Lookup_MarcketSource">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[MarketLookupTable]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

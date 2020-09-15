@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Tigist_Segni_QuickenLoan 1"
   DTS:PackageType="5"
-  DTS:VersionBuild="170"
-  DTS:VersionGUID="{C047D27C-5FCE-4342-87D6-B986A3E38067}">
+  DTS:VersionBuild="191"
+  DTS:VersionGUID="{0BCC89A7-1C29-4AEA-9D79-3039B09D625B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,6 +24,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Integrated Security=True;Application Name=SSIS-Pkg_Tigist_Segni_LendingQB-{7AD32838-2E2C-4C5E-9F7E-30FF965ECECE}DESKTOP-MOMS2QA.QLSSISLOG 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{47343D58-5C49-4102-AD23-EC19C944197A}"
+      DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -69,7 +79,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/13/2020 3:19:54 PM</DTS:VariableValue>
+        DTS:DataType="7">9/15/2020 9:31:31 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -153,7 +163,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/13/2020 3:19:54 PM</DTS:VariableValue>
+        DTS:DataType="7">9/15/2020 9:31:31 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -14887,7 +14897,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{DD0F64FE-3F44-4472-A8D6-5C7139974F6A}"
+          SQLTask:Connection="{D5A5046D-4918-4DEF-9C18-5753A886E24D}"
           SQLTask:SqlStatementSource="Delete from[dbo].[stg_Tigist_Segni_QL]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -14895,7 +14905,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_ETL_Log"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{0780DF45-9182-44B4-B9FC-805277339226}"
+      DTS:DTSID="{19536440-e63a-435e-a3a1-624e2fb653d3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_ETL_Log"
@@ -14904,74 +14914,73 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{7AD32838-2E2C-4C5E-9F7E-30FF965ECECE}"
-          SQLTask:IsStoredProc="True"
-          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Quicken_Loans_ETL_Error_Log]&#xA;VALUES&#xA;(&#xA; @PackageID&#xA;,@PackageName&#xA; ,@SourceName&#xA; ,@Runtime&#xA;,@RunBy&#xA;,@NumberOfRowsInserted&#xA;,@LastModifiedDate&#xA;)&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:Connection="{47343D58-5C49-4102-AD23-EC19C944197A}"
+          SQLTask:SqlStatementSource="DECLARE&#xA;  @PackageID uniqueidentifier  ,&#xA; @PackageName varchar(500)  ,&#xA; @SourceName varchar(100) ,&#xA; @Runtime datetime ,&#xA; @RunBy varchar(100) ,&#xA; @NumberOfRowsInserted int ,&#xA; @LastModifiedDate datetime &#xA;&#xA;   &#xA; SET @PackageID     =  ?&#xA; SET @PackageName    =  ?&#xA; SET @SourceName  =  ?&#xA; SET @Runtime  =  ?&#xA; SET @RunBy    =  ?&#xA; SET @NumberOfRowsInserted    =  ?&#xA; SET @LastModifiedDate  =  ?&#xA; &#xA;&#xA; EXEC uspQuicken_Loans_ETL_Log &#xA; @PackageID    ,&#xA; @PackageName    ,&#xA; @SourceName   ,&#xA; @Runtime  ,&#xA; @RunBy   ,&#xA; @NumberOfRowsInserted   ,&#xA; @LastModifiedDate " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@PackageID"
+            SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="System::PackageID"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="9"
+            SQLTask:DataType="72"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@PackageName"
+            SQLTask:ParameterName="1"
             SQLTask:DtsVariableName="System::PackageName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@SourceName"
+            SQLTask:ParameterName="2"
             SQLTask:DtsVariableName="User::VarSourceName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@Runtime"
+            SQLTask:ParameterName="3"
             SQLTask:DtsVariableName="User::VarTimeStamp"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="5"
+            SQLTask:DataType="7"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@RunBy"
+            SQLTask:ParameterName="4"
             SQLTask:DtsVariableName="System::MachineName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@NumberOfRowInserted"
+            SQLTask:ParameterName="5"
             SQLTask:DtsVariableName="User::VarRowCount"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="11"
+            SQLTask:DataType="3"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
-            SQLTask:ParameterName="@LastModifiedDate"
+            SQLTask:ParameterName="6"
             SQLTask:DtsVariableName="User::VarLastModifiedDate"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="5"
+            SQLTask:DataType="7"
             SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task_LastModified_Date"
+      DTS:refId="Package\Execute SQL Task_Max_LastModified_Date"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{8A29ACF4-9140-4F8E-83EA-F9E9AA133AA1}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task_LastModified_Date"
+      DTS:ObjectName="Execute SQL Task_Max_LastModified_Date"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{DD0F64FE-3F44-4472-A8D6-5C7139974F6A}"
-          SQLTask:SqlStatementSource="SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA; FROM  [dbo].[Stg_Tigist_Segni_QL]&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:Connection="{D5A5046D-4918-4DEF-9C18-5753A886E24D}"
+          SQLTask:SqlStatementSource="SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA; FROM  [dbo].[Stg_Tigist_Segni_QL]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::VarSourceName"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="16"
+            SQLTask:DataType="129"
             SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
@@ -14990,14 +14999,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
       DTS:DTSID="{4DE6329D-AAF3-45AC-A073-443E0A7A06DC}"
-      DTS:From="Package\Execute SQL Task_LastModified_Date"
+      DTS:From="Package\Execute SQL Task_Max_LastModified_Date"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Execute SQL Task_Delete_Table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{F9BAA040-4DCF-41D0-A411-71D603EDEAA8}"
+      DTS:DTSID="{9CFA8B10-E01B-49FB-99F4-51A2077E3D92}"
       DTS:From="Package\Data Flow Task_SalesForce"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -15028,7 +15037,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ETL_Error_Log"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{D7306D4F-ED11-4E74-A9D7-2305983A170F}"
+          DTS:DTSID="{c63575f2-4d06-4b65-92d6-906c94c2eea3}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ETL_Error_Log"
@@ -15036,49 +15045,49 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{7AD32838-2E2C-4C5E-9F7E-30FF965ECECE}"
-              SQLTask:SqlStatementSource="INSERT INTO  [dbo].[Quicken_Loans_ETL_Error_Log]&#xA;values&#xA;(@PackageID,@PackageName,@SourceName,@LoadDate,@RunBy,@ErrorCode,@ErrorDescription)&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:Connection="{47343D58-5C49-4102-AD23-EC19C944197A}"
+              SQLTask:SqlStatementSource="DECLARE @PackageID uniqueidentifier &#xA;       ,@PackageName  Varchar(100) &#xA;    ,@SourceName  Varchar(100) &#xA;    ,@LoadDate  Datetime   &#xA;    ,@RunBy   Varchar(100) &#xA;    ,@ErrorCode  Varchar(100) &#xA;    ,@ErrorDescription  Varchar(Max)  &#xA;SET @PackageID =? &#xA;SET @PackageName =?  &#xA;SET @SourceName   =? &#xA;SET @LoadDate   =? &#xA;SET @RunBy =? &#xA;SET @ErrorCode   =? &#xA;SET @ErrorDescription    =?  &#xA;EXEC  uspQuicken_Loans_ETL_Error_Log&#xA; &#xA;           @PackageID   &#xA;     ,@PackageName    &#xA;     ,@SourceName     &#xA;     ,@LoadDate     &#xA;     ,@RunBy      &#xA;     ,@ErrorCode    &#xA;     ,@ErrorDescription&#xA; &#xA;                                               " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@packageId"
+                SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="System::PackageID"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="9"
+                SQLTask:DataType="72"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@PackageName"
+                SQLTask:ParameterName="1"
                 SQLTask:DtsVariableName="System::PackageName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@sourceName"
+                SQLTask:ParameterName="2"
                 SQLTask:DtsVariableName="System::SourceName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@loadDate"
+                SQLTask:ParameterName="3"
                 SQLTask:DtsVariableName="User::VarTimeStamp"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="5"
+                SQLTask:DataType="7"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@RunBy"
+                SQLTask:ParameterName="4"
                 SQLTask:DtsVariableName="System::MachineName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@ErrorCode"
+                SQLTask:ParameterName="5"
                 SQLTask:DtsVariableName="System::ErrorCode"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="7"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@ErrorDiscription"
+                SQLTask:ParameterName="6"
                 SQLTask:DtsVariableName="System::ErrorDescription"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="16"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
@@ -15765,7 +15774,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{59998D82-571B-4467-8C3C-713277079257}"
+          DTS:DTSID="{996A3F43-8C11-45A0-9163-F6DAB51C855A}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task_ETL_Error_Log"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -15791,67 +15800,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             DTS:DataType="11">-1</DTS:VariableValue>
         </DTS:Variable>
       </DTS:Variables>
-      <DTS:Executables>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Execute SQL Task"
-          DTS:DTSID="{34318DC8-3FE9-4A0B-BCCF-44B08BEF36EC}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task"
-          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{9CB7D05B-8DF5-4FB2-9CC2-734475E4AFB1}"
-              SQLTask:SqlStatementSource="INSERT INTO  [dbo].[Quicken_Loans_ETL_Error_Log]&#xA;VALUES     (PackageID,PackageName,SourceName,LoadDate,RunBy,ErrorCode,ErrorDescription)&#xA;(&#xA; ?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="0"
-                SQLTask:DtsVariableName="System::PackageID"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="72"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="1"
-                SQLTask:DtsVariableName="System::PackageName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="2"
-                SQLTask:DtsVariableName="System::SourceName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="3"
-                SQLTask:DtsVariableName="System::StartTime"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="135"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="4"
-                SQLTask:DtsVariableName="System::MachineName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="5"
-                SQLTask:DtsVariableName="$Project::ODataSource_AuthType"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="6"
-                SQLTask:DtsVariableName="$Project::ODataSource_AuthType"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-            </SQLTask:SqlTaskData>
-          </DTS:ObjectData>
-        </DTS:Executable>
-      </DTS:Executables>
+      <DTS:Executables />
     </DTS:EventHandler>
   </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -15869,45 +15818,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="241.6,41.6"
           Id="Package\Data Flow Task_SalesForce"
-          TopLeft="117.499998169287,179.094119716355" />
+          TopLeft="38.3333346484209,165.227452939486" />
         <NodeLayout
           Size="270.4,41.6"
           Id="Package\Execute SQL Task_Delete_Table"
-          TopLeft="421.78570287771,105.223530429254" />
+          TopLeft="537.61903160824,170.223530945828" />
         <NodeLayout
           Size="212.8,41.6"
           Id="Package\Execute SQL Task_ETL_Log"
-          TopLeft="483.710301564282,280.732029615698" />
+          TopLeft="615.833308862316,279.933335558044" />
         <NodeLayout
-          Size="257.6,41.6"
-          Id="Package\Execute SQL Task_LastModified_Date"
-          TopLeft="139.16666113668,28.6000002272929" />
+          Size="282.4,41.6"
+          Id="Package\Execute SQL Task_Max_LastModified_Date"
+          TopLeft="73.3333304193283,48.5333337190421" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="556.98570287771,146.823530429254">
+          TopLeft="537.61903160824,188.525491942657">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-318.685704708424,32.2705892871014"
+              EndConnector="-257.685696959819,0"
               Start="0,0"
-              End="-318.685704708424,24.7705892871014">
+              End="-250.185696959819,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.1352946435507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.1352946435507"
-                    Point2="0,16.1352946435507"
-                    Point3="-4,16.1352946435507" />
-                  <mssgle:LineSegment
-                    End="-314.685704708424,16.1352946435507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-314.685704708424,16.1352946435507"
-                    Point2="-318.685704708424,16.1352946435507"
-                    Point3="-318.685704708424,20.1352946435507" />
-                  <mssgle:LineSegment
-                    End="-318.685704708424,24.7705892871014" />
+                    End="-250.185696959819,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15918,30 +15855,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="267.96666113668,70.2000002272929">
+          TopLeft="214.533330419328,90.1333337190421">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="289.01904174103,35.023530201961"
+              EndConnector="458.285701188912,80.0901972267859"
               Start="0,0"
-              End="289.01904174103,27.523530201961">
+              End="458.285701188912,72.5901972267859">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.5117651009805" />
+                    End="0,36.045098613393" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.5117651009805"
-                    Point2="0,17.5117651009805"
-                    Point3="4,17.5117651009805" />
+                    Point1="0,36.045098613393"
+                    Point2="0,40.045098613393"
+                    Point3="4,40.045098613393" />
                   <mssgle:LineSegment
-                    End="285.01904174103,17.5117651009805" />
+                    End="454.285701188912,40.045098613393" />
                   <mssgle:CubicBezierSegment
-                    Point1="285.01904174103,17.5117651009805"
-                    Point2="289.01904174103,17.5117651009805"
-                    Point3="289.01904174103,21.5117651009805" />
+                    Point1="454.285701188912,40.045098613393"
+                    Point2="458.285701188912,40.045098613393"
+                    Point3="458.285701188912,44.045098613393" />
                   <mssgle:LineSegment
-                    End="289.01904174103,27.523530201961" />
+                    End="458.285701188912,72.5901972267859" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15952,30 +15889,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="238.299998169287,220.694119716355">
+          TopLeft="159.133334648421,206.827452939486">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="351.810303394995,60.0379098993431"
+              EndConnector="563.099974213895,73.1058826185577"
               Start="0,0"
-              End="351.810303394995,52.5379098993431">
+              End="563.099974213895,65.6058826185577">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.0189549496715" />
+                    End="0,32.5529413092788" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.0189549496715"
-                    Point2="0,30.0189549496715"
-                    Point3="4,30.0189549496715" />
+                    Point1="0,32.5529413092788"
+                    Point2="0,36.5529413092788"
+                    Point3="4,36.5529413092788" />
                   <mssgle:LineSegment
-                    End="347.810303394995,30.0189549496715" />
+                    End="559.099974213895,36.5529413092788" />
                   <mssgle:CubicBezierSegment
-                    Point1="347.810303394995,30.0189549496715"
-                    Point2="351.810303394995,30.0189549496715"
-                    Point3="351.810303394995,34.0189549496715" />
+                    Point1="559.099974213895,36.5529413092788"
+                    Point2="563.099974213895,36.5529413092788"
+                    Point3="563.099974213895,40.5529413092788" />
                   <mssgle:LineSegment
-                    End="351.810303394995,52.5379098993431" />
+                    End="563.099974213895,65.6058826185577" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15995,37 +15932,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="241.6,41.6"
           Id="Package.EventHandlers[OnError]\Execute SQL Task_ETL_Error_Log"
-          TopLeft="184.166669878695,52.1999997313818" />
+          TopLeft="219.999991257986,52.0000004132589" />
         <NodeLayout
           Size="224.8,41.6"
           Id="Package.EventHandlers[OnError]\Script Task"
           TopLeft="530.833312239913,132.60000105381" />
         <EdgeLayout
           Id="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
-          TopLeft="304.966669878695,93.7999997313818">
+          TopLeft="340.799991257986,93.6000004132589">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="338.266642361218,38.8000013224284"
+              EndConnector="302.433320981927,39.0000006405511"
               Start="0,0"
-              End="338.266642361218,31.3000013224284">
+              End="302.433320981927,31.5000006405511">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.4000006612142" />
+                    End="0,15.5000003202755" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.4000006612142"
-                    Point2="0,19.4000006612142"
-                    Point3="4,19.4000006612142" />
+                    Point1="0,15.5000003202755"
+                    Point2="0,19.5000003202755"
+                    Point3="4,19.5000003202755" />
                   <mssgle:LineSegment
-                    End="334.266642361218,19.4000006612142" />
+                    End="298.433320981927,19.5000003202755" />
                   <mssgle:CubicBezierSegment
-                    Point1="334.266642361218,19.4000006612142"
-                    Point2="338.266642361218,19.4000006612142"
-                    Point3="338.266642361218,23.4000006612142" />
+                    Point1="298.433320981927,19.5000003202755"
+                    Point2="302.433320981927,19.5000003202755"
+                    Point3="302.433320981927,23.5000003202755" />
                   <mssgle:LineSegment
-                    End="338.266642361218,31.3000013224284" />
+                    End="302.433320981927,31.5000006405511" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16046,7 +15983,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="162.4,41.6"
-          Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
+          Id="{34318DC8-3FE9-4A0B-BCCF-44B08BEF36EC}"
           TopLeft="304.571424034177,55.352940157623" />
       </GraphLayout>
     </LayoutInfo>
@@ -16119,9 +16056,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16143,9 +16078,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16180,7 +16113,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-352.773043434753,41.9666671797961,131.1127734375,10.7841796875"
+              BoundingBox="-352.773043434754,41.9666671797961,131.1127734375,10.7841796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16203,9 +16136,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16227,9 +16158,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16287,9 +16216,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16314,7 +16241,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>

@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-MOMS2QA</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAAD+13axGZAE0vhEt56yiij/v8X7pqLJv9nhaZXYV8S1lQAAAAAOgAAAAAIAACAAAAA3DBpZzkVH1ao/C2Pl7sM0G4DekZYZvlRPUctjbAElYJAAAAAF3Y6QuOEYtOKxrX1eB9Y7JO84bjU8uJO2o2jEo5adq7u06Bt9sSUkW5zmDqhkUeTyCjaH2Js1CekILOUkx+YjzfL/nEf1CXVJdrj9gL6Sz2+qc/fuIqvu0XVRlG8Xu8/ckAJv8dc8qPV2ZNtaAXNLTlOmC7mVDm7NcD4fXI3ukQezHbEahT/+yYZ0wSF53ZxAAAAA4u0c2ez60O3jFgzCsH3PikP1K6urOv1wfLBweHB7ey/s2G89j/MhBofGT48PgWvyNN2rU9E4KX+p5gKva+uxiQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAABsLf7wsXtaPFkCiLVPucYh12oXLlJ1/FWaCbhkiblUqAAAAAAOgAAAAAIAACAAAAADpaIZwUEC1D+swbL+oPgyyzOpp+KNDGMcrqnbrpda2ZAAAACIXLIsPO+8RvEwk89SqGJhEo9H4pmPZcwcn6KicknqaVFpiaRqA7U+AH9xlyCsIlg/avFJHDUS9uws8/GUi0fIfQlVc6o/zW9nq8u/9fXbafXBLC7PeDIrszXyxsnEhKyykFUYX0CDzg6i+QBTATGZjkbg0Msz201obU7ZsSOFL4COE8TKD57sKWgN6xNq4OJAAAAA1kk7F1ZA6jfaGiV2T0tcwUtk61sQX3Qt/3O8JmyLOSLY8tYt31sjzQfNt0YDteXqkxQAiHFcIDMj/Nw9skDO3A==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -67,7 +67,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NDI1MzYwODAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ0MzQwMDA4OTY0NDQxMiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsZThjNzc4OWYtNTBiYy0wMDAwLTRmYTEtOTFlNjA5ZGUxZDdkLGU4Yzc3ODlmLTUwYmMtMDAwMC00ZmExLTkxZTYwOWRlMWQ3ZCwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxXeFJFaXNlSXpVTVNudEZMMjVpMnBXcTNObDRKOStGVDJ6QTRXcmtSVlFIL2h3aTVYeXhXTWNESFkrdlNtWWNQT3RtcW5ERnpRYkw2dXRTZGlvWUdqYlRyRGxlbERXTU5ucVdPV1BRMGtSOHJ0eGt5cFFjMS9Qa2lhdHhjM3k4OWpTZG5jNFI4Wk1PbHM1d0J1ZEFjczJaWFlSMWhaREMwZEF0ejU1VzRRR0NQQlBNek1SbkRVRFZnQUZld09DelhwMXhpTnVpUVJIczNRSStkZjloZHdDazhaTmh1V2FqWm1SYVlBandRK01QWnB5NjhGVWRNL3B3ajI3TC90RFMycE85dzY1SHlQVTNXNmRvQWhpMm5JMGlOSWhDdUs2ckg4RGloOTJQdmNWcW1wbkpNZkk2NnNCb2RHdGs4aFVzTS9FR0o3T0lneThmK21YNG41Nk0zS3c9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NDYwNzM2ODAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ0NjkzNzY4OTEzNDQ3MywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsNDcxOTdhOWYtMjBlYS0wMDAwLTQ5MDAtODY3ZDY4OWUyNGVmLDQ3MTk3YTlmLTIwZWEtMDAwMC00OTAwLTg2N2Q2ODllMjRlZiwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxTN2sxNlp3NkNwOGdpb3RHR0FvSWUvTGFrTUJoTGhWMFA4bFl1bEV0RjdTOVh2bnlLbGhubzRMT212aS9vNTcwWVlXWEd6akFlTmRhUEcvZEdISjBaNzdOSUNNQndGTnQzT1BJQVdwODc0V3g0aDJqdWlTdWlVcld5Z1Exd2xhOHJlblg1cHFLcHd5MkNWUW9lMFFFQ1hMZ2JTZmZYemR3bVdwSXRNTCtpYVZhcUdyaW13ODZTMndpeXpQSUltVDY0YncxTDhEbXVSWmtTWDlYZko2Zkt4RkZESytXK0xTS0FQZzREaytBSHpZR05oOE5zMDhpam0za1E1NStUdWFpaWI5aFdsaVRzVks2N0JhNkl5cGI4MHNFTUJwblZqR2J5SmtHQzhxVXlJVHBRTURNWHB6MjBoZ2ZqYVF3K3E3cjNRRUtTZi9zdDFCWHpwOGtFOXlKbFE9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -845,10 +845,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Tigist_Segni_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">129</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">161</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B78FAD11-89FD-4124-B777-6ADF8464BC04}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0B88F61E-1749-4BD1-9656-4C7C0A6418F7}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1768,10 +1768,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Tigist_Segni_QuickenLoan 1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">149</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">184</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{87176CAE-9D1D-4AA0-9BE9-4B5A50CC1E14}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7A9F08F0-8BF6-4D6E-BB10-75DAEFBE8F2A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1883,6 +1883,124 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG 1.UserName">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.ConnectByProxy">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.ConnectUsingManagedIdentity">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.InitialCatalog">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">QLSSISLOG</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.Password">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.RetainSameConnection">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.ServerName">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">DESKTOP-MOMS2QA</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-MOMS2QA.QLSSISLOG1.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
