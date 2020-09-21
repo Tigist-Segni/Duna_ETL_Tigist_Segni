@@ -4,7 +4,7 @@
   DTS:DTSID="{2620F6B2-ED53-4FEB-A68B-8D81B3127CF7}"
   DTS:CreationName="FTP">
   <DTS:PropertyExpression
-    DTS:Name="ServerPassword">@[$Project::FTPConnectionManager_ServerPassword]</DTS:PropertyExpression>
+    DTS:Name="ServerPassword">@[$Project::FTPConnectionManager_ServerPassword1]</DTS:PropertyExpression>
   <DTS:PropertyExpression
     DTS:Name="UsePassiveMode">@[$Project::FTPConnectionManager_UsePassiveMode]</DTS:PropertyExpression>
   <DTS:ObjectData>
@@ -15,7 +15,7 @@
         DTS:ServerUserName="dunatek">
         <DTS:Property
           DTS:Name="ServerPassword"
-          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAAA3hUWDDOcHE7zcdopCXIoJn3cn/gwCO7/7XK2PVn0EtwAAAAAOgAAAAAIAACAAAACkblU4DYRhZ+nuE0VT/2Nw2YkigfChOnsuMlsvXtm3+JAAAAB0xSnxlPPs5Cmd+pMDAxlR9gDShBt/NcDOJGzaCD1ANaJLG/ej4MY/m8tlsRnUT0d9Bd6K7V4NFCEP9SUEhV2QfvZXd1N+cwfi09WKeyTQuUonfuD2oBt0mSYgQ6U9WYLpN8+QceLT4/nDBaEZ7piZE0WTASGUCQV5VPTyeThzztUBIgpt0mXk70PR2FswJ0lAAAAA/RkT2z06CyJEM+Vrbc5Ifmo38txmDiEEGixmxubd6Ll4I5jViAwUSC44UgRNkR6pE1FG+qpIZahyAON8lnWyeA==</DTS:Property>
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAADq+sSNwNggeXcMvsVBx4suEtmb1bxvq/S4khElCj8tMgAAAAAOgAAAAAIAACAAAAD4RQRlgmgYnEBirIEk6LbM4a2wBxHKF+r8VBksnKP07JAAAADjelaz8D6DpCF43cX2y7hJpmgnUbfZ4mB6AEEfbgj0XtGnOTjewiFHZPYfHB4DduVqH2HgQV/WYB8DnRSAVnNA+HxKlaCUd1fndOJnrND2WdlGURWPnIC3eR5/vPBmE3GnjA+cx2VyMUUWvj19MlH/O1rraKnXTw6e2XneQWI9ntLusS3P0hcLNH8OGLYplSVAAAAAfPT0JMVdbJ9Ai6MGWcWWZg6HdEcLAyscse3SM7FaqEkaKdV0qZsuP3FQHjfsI0Lg8vCiqXlfff49xh9NbGEKhA==</DTS:Property>
       </DTS:FtpConnection>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
