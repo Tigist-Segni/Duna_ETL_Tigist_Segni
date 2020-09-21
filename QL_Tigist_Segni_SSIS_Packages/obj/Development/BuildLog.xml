@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Tigist_Segni_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-16T04:46:04.1925762Z</LastWriteTime>
+    <LastWriteTime>2020-09-20T20:44:47.387944Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -12,13 +12,18 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Pkg_Tigist_Segni_UnderWriter.dtsx</Name>
-      <LastWriteTime>2020-09-16T04:51:10.5055503Z</LastWriteTime>
+      <Name>Pkg_Tigist_Segni_QuickenLoan.dtsx</Name>
+      <LastWriteTime>2020-09-15T17:50:25.3658866Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Pkg_Tigist_Segni_QuickenLoan.dtsx</Name>
-      <LastWriteTime>2020-09-15T17:50:25.3658866Z</LastWriteTime>
+      <Name>Pkg_Tigist_Segni_LendingPad.dtsx</Name>
+      <LastWriteTime>2020-09-17T23:51:34.0983178Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Tigist_Segni_UnderWriter.dtsx</Name>
+      <LastWriteTime>2020-09-21T00:00:43.6837438Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
