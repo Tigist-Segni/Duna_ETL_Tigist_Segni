@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Tigist_Segni_LendingPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="309"
-  DTS:VersionGUID="{869EDC32-F6CB-4BA2-B279-8DFED097BD93}">
+  DTS:VersionBuild="321"
+  DTS:VersionGUID="{48ECC429-62E8-44C3-BCEE-0DE28132F4A3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -111,7 +111,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/20/2020 11:25:56 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 7:08:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -149,7 +149,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarFullArchiveFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-09-20-23-25-56.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-09-22-19-08-08.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -260,7 +260,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/20/2020 11:25:56 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 7:08:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -278,7 +278,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varUnzippedFileFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\SSIS\LendingPadUnzipped\LendingPad.json</DTS:VariableValue>
+        DTS:DataType="8">C:\SSIS\LendingPadUnzipped\LendingPad.json\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -508,14 +508,14 @@
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Program Files\7-Zip\7z.exe"
-              Arguments="x C:\SSIS\BulkFiles\LendingPad.Zip -oC:\SSIS\LendingPadUnzipped\LendingPad.json"
+              Arguments="x C:\SSIS\BulkFiles\LendingPad.Zip -oC:\SSIS\LendingPadUnzipped\LendingPad.json\"
               FailTaskIfReturnCodeIsNotSuccessValue="False" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container_Rename and Move_Files\File System Task_Rename and Move"
           DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-09-20-23-25-56.zip"
+          DTS:Description="C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-09-22-19-08-08.zip"
           DTS:DTSID="{BD21DB6F-5732-4EB7-8885-977D082354B7}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
@@ -549,8 +549,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{F1637569-B321-405F-A787-45128689919F}"
-          DTS:ObjectName="{F1637569-B321-405F-A787-45128689919F}"
+          DTS:DTSID="{CB089717-810B-4190-9F44-866309319ABB}"
+          DTS:ObjectName="{CB089717-810B-4190-9F44-866309319ABB}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::VarFileName" />
       </DTS:ForEachVariableMappings>
@@ -10636,8 +10636,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                         </externalMetadataColumn>
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\JSON Source (REST API or File).Outputs[JsonSourceOutput].ExternalColumns[BorrBirthDate]"
-                          dataType="wstr"
-                          length="40"
+                          dataType="dbTimeStamp"
                           name="BorrBirthDate">
                           <properties>
                             <property
@@ -14031,7 +14030,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ETL_Error_Log"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
           DTS:DTSID="{54052FC5-083F-473B-8D93-C976A06A9AF0}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -14818,25 +14816,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="269.6,41.6"
           Id="Package\Foreach Loop Container_Rename and Move_Files\Execute Process Task_UnzipLendingPad"
-          TopLeft="15.4999996026361,23.2000022315979" />
+          TopLeft="25.4999992052718,31.866668967141" />
         <NodeLayout
           Size="251.2,41.6"
           Id="Package\Foreach Loop Container_Rename and Move_Files\File System Task_Rename and Move"
-          TopLeft="30.7999789396926,111.333335413403" />
+          TopLeft="44.1333117432071,107.000002045631" />
         <EdgeLayout
           Id="Package\Foreach Loop Container_Rename and Move_Files.PrecedenceConstraints[Constraint]"
-          TopLeft="153.349989271164,64.8000022315979">
+          TopLeft="160.299999205272,73.466668967141">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.5333331818051"
+              EndConnector="9.43331253793522,33.5333330784904"
               Start="0,0"
-              End="0,39.0333331818051">
+              End="9.43331253793522,26.0333330784904">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.0333331818051" />
+                    End="0,12.7666665392452" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7666665392452"
+                    Point2="0,16.7666665392452"
+                    Point3="4,16.7666665392452" />
+                  <mssgle:LineSegment
+                    End="5.43331253793522,16.7666665392452" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.43331253793522,16.7666665392452"
+                    Point2="9.43331253793522,16.7666665392452"
+                    Point3="9.43331253793522,20.7666665392452" />
+                  <mssgle:LineSegment
+                    End="9.43331253793522,26.0333330784904" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14876,6 +14886,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="282.4,41.6"
           Id="Package\Sequence Container\Execute SQL Task_Max_LastModified_Date"
           TopLeft="56.7999777476001,10.3444480616083" />
+        <NodeLayout
+          Size="305.6,41.6"
+          Id="Package\Sequence Container\File System Task_Delete_LendingPad_JSONFile"
+          TopLeft="49.3999779462828,265.20000392596" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
           TopLeft="197.9999777476,51.9444480616083">
@@ -14944,10 +14958,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="305.6,41.6"
-          Id="Package\Sequence Container\File System Task_Delete_LendingPad_JSONFile"
-          TopLeft="49.3999779462828,265.20000392596" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
           TopLeft="201.516654381488,212.260789850952">
@@ -15146,7 +15156,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="241.6,41.6"
           Id="Package.EventHandlers[OnError]\Execute SQL Task_ETL_Error_Log"
@@ -15186,9 +15196,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -15218,7 +15226,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1"
-          TopLeft="706.666638586257,99.4666672727797" />
+          TopLeft="707.499971886476,99.4666672727797" />
         <NodeLayout
           Size="342.4,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Conditional Split_BorrFirstName_BorrLastName_NotTest"
@@ -15249,26 +15257,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="385.633307074177,11.8000031201045"
+              EndConnector="386.466640374396,11.8000031201046"
               Start="0,0"
-              End="378.133307074177,11.8000031201045">
+              End="378.966640374396,11.8000031201046">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="188.816653537088,0" />
+                    End="189.233320187198,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="188.816653537088,0"
-                    Point2="192.816653537088,0"
-                    Point3="192.816653537088,4" />
+                    Point1="189.233320187198,0"
+                    Point2="193.233320187198,0"
+                    Point3="193.233320187198,4" />
                   <mssgle:LineSegment
-                    End="192.816653537088,7.80000312010453" />
+                    End="193.233320187198,7.80000312010461" />
                   <mssgle:CubicBezierSegment
-                    Point1="192.816653537088,7.80000312010453"
-                    Point2="192.816653537088,11.8000031201045"
-                    Point3="196.816653537088,11.8000031201045" />
+                    Point1="193.233320187198,7.80000312010461"
+                    Point2="193.233320187198,11.8000031201046"
+                    Point3="197.233320187198,11.8000031201046" />
                   <mssgle:LineSegment
-                    End="378.133307074177,11.8000031201045" />
+                    End="378.966640374396,11.8000031201046" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15381,30 +15389,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File.Paths[Derived Column Output]"
-          TopLeft="787.466638586257,141.06666727278">
+          TopLeft="788.299971886476,141.06666727278">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-633.133305981425,42.133333966997"
+              EndConnector="-633.966639281644,42.1333339669973"
               Start="0,0"
-              End="-633.133305981425,34.633333966997">
+              End="-633.966639281644,34.6333339669973">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.0666669834985" />
+                    End="0,17.0666669834986" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.0666669834985"
-                    Point2="0,21.0666669834985"
-                    Point3="-4,21.0666669834985" />
+                    Point1="0,17.0666669834986"
+                    Point2="0,21.0666669834986"
+                    Point3="-4,21.0666669834986" />
                   <mssgle:LineSegment
-                    End="-629.133305981425,21.0666669834985" />
+                    End="-629.966639281644,21.0666669834986" />
                   <mssgle:CubicBezierSegment
-                    Point1="-629.133305981425,21.0666669834985"
-                    Point2="-633.133305981425,21.0666669834985"
-                    Point3="-633.133305981425,25.0666669834985" />
+                    Point1="-629.966639281644,21.0666669834986"
+                    Point2="-633.966639281644,21.0666669834986"
+                    Point3="-633.966639281644,25.0666669834986" />
                   <mssgle:LineSegment
-                    End="-633.133305981425,34.633333966997" />
+                    End="-633.966639281644,34.6333339669973" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
