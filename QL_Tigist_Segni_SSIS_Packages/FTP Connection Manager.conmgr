@@ -12,10 +12,11 @@
       DTS:ConnectionString="ftp.drivehq.com:21">
       <DTS:FtpConnection
         DTS:ServerName="ftp.drivehq.com"
-        DTS:ServerUserName="dunatek">
+        DTS:ServerUserName="dunatek"
+        DTS:UsePassiveMode="True">
         <DTS:Property
           DTS:Name="ServerPassword"
-          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAABOYriijyY5sfRu9R7sHWStxBowP0RVt1BvRSCx5OeYIAAAAAAOgAAAAAIAACAAAADBfGByKHACF3Wu0N88mCB8JnLFmcXmXTs4REfON4k1XoAAAAAD6Um1YKwS3PpDtO6w9qnpSw/nbut7sFPOBXbVHeVMXKRtN3AKtaU0KIWd/tyihMaTbYPcBw2/N7+OudkIh9URCEfrdXtv2FEkGGLO07GLRM0ZLFCsvdZ1s/ggSOJatjYzzvujl1PwsABkTMIIEZhMvNjL5u2U2wToLZaNZp8zPUAAAAAkOhCNWLvczVl1mWYQVM7cuC8cAjl15G0vw931IxPqeLRbzSHPENjbH6fK/cxwulpuxHGh8Ul3K46IBGmbXQaB</DTS:Property>
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAABCZI+GjXqfpJkH1LsnFOvyjuI6sXIRIRQ0zUPnmKYV4AAAAAAOgAAAAAIAACAAAAD/BXUJMPuCIIBf0e+wSu6QTTVuk5oGtVRb+snU1GZObZAAAAC9uzY1ttozxnmPt8ym/Om0UyaxppQX66EzoknKUH00YRvkS8fRYSjOMyNDgm1QzpXDrLl8kD09LxD3fAFQTofDhSCSLB1UCbyChmbjBd2MHO84IkBY1fAWkWil3wY3fZI/oDfQ4IlmI8r+mHWzJWOW6mdubgoay+USAl+PnEH1O5klGJkOPJQYtLEkLgm/CZpAAAAAriFWSPd/7JbJnZueGtFHH5XiwKTU4XPsiEZY5pzI9MO6lpREnIJmxPUfzXj31a7dBm7fXltP97SC5+b+hYoouQ==</DTS:Property>
       </DTS:FtpConnection>
     </DTS:ConnectionManager>
   </DTS:ObjectData>

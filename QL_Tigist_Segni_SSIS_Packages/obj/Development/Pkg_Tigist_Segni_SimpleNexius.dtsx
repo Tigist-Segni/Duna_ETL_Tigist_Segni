@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Tigist_Segni_SimpleNexius"
   DTS:PackageType="5"
-  DTS:VersionBuild="394"
-  DTS:VersionGUID="{05290D88-463E-43F5-9CA5-DCDB1032BEB0}">
+  DTS:VersionBuild="422"
+  DTS:VersionGUID="{477455FB-D920-4FE4-9943-075A179F70AB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -130,7 +130,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 11:47:23 PM</DTS:VariableValue>
+        DTS:DataType="7">9/26/2020 1:42:25 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -177,16 +177,16 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarFullArchiveFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\SSIS\Project2020\ArchiveFolder\SimpleNexus.Zip2020-09-23-23-47-23.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\SSIS\Project2020\ArchiveFolder\SimpleNexus.Zip2020-09-26-13-42-25.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{3DA7D9E1-77B0-43EB-80D7-2B7E6DA0ED74}"
-      DTS:IncludeInDebugDump="6789"
+      DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLastModifiedDate">
       <DTS:VariableValue
-        DTS:DataType="7">9/1/2020 8:29:00 PM</DTS:VariableValue>
+        DTS:DataType="8">DATEADD("YY",-20,GETDATE())</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -297,7 +297,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 11:47:23 PM</DTS:VariableValue>
+        DTS:DataType="7">9/26/2020 1:42:25 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -315,7 +315,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varUnzippedFileFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\SSIS\LendingPadUnzipped\</DTS:VariableValue>
+        DTS:DataType="8">C:\SSIS\Project2020\UnzippedFolder\SimpleNexus.bak</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -570,7 +570,7 @@
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container_Rename and Move_Files\File System Task_Rename and Move"
           DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\SSIS\Project2020\ArchiveFolder\SimpleNexus.Zip2020-09-23-23-47-23.zip"
+          DTS:Description="C:\SSIS\Project2020\ArchiveFolder\SimpleNexus.Zip2020-09-26-13-42-25.zip"
           DTS:DTSID="{E6CF7943-F286-4248-B725-A7B7E5A9042D}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
@@ -2067,6 +2067,95 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_BorrFirstName_BorrLastName_NotTest.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                           dataType="i4"
                           lineageId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_BorrFirstName_BorrLastName_NotTest.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="Conditional Split_LastModifiedDate"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Inputs[Conditional Split Input].Columns[LastModifiedDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="LastModifiedDate"
+                          lineageId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[KEEP]"
+                      description="Output 1 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="KEEP"
+                      synchronousInputId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">(DT_DBDATE)#{Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]} &gt; (DT_DBDATE)@[User::VarLastModifiedDate]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBDATE)LastModifiedDate &gt; (DT_DBDATE)@[User::VarLastModifiedDate]</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[Conditional Split Default Output]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="Conditional Split Default Output"
+                      synchronousInputId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -12651,13 +12740,18 @@ where [refTable].[MarketSourceCode] = ?</property>
                   name="Fuzzy Lookup Output"
                   startId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output]" />
                 <path
+                  refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[KEEP]"
+                  endId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_BorrFirstName_BorrLastName_NotTest.Inputs[Conditional Split Input]"
+                  name="KEEP"
+                  startId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Outputs[KEEP]" />
+                <path
                   refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[Lookup Match Output]"
                   endId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Derived Column_ReplaceNull_Dunateak.Inputs[Derived Column Input]"
                   name="Lookup Match Output"
                   startId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Lookup_MarketSource.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[OLE DB Source Output]"
-                  endId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_BorrFirstName_BorrLastName_NotTest.Inputs[Conditional Split Input]"
+                  endId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate.Inputs[Conditional Split Input]"
                   name="OLE DB Source Output"
                   startId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\OLE DB Source.Outputs[OLE DB Source Output]" />
                 <path
@@ -12683,7 +12777,24 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{6434B82E-BAD5-43BF-9326-4DC970F9B68E}"
-              SQLTask:SqlStatementSource="Delete from[dbo].[stg_Tigist_Segni_QL]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="Delete from[dbo].[stg_Tigist_Segni_QL]&#xA;where SourceName='SimpleNexus'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Handling_Insurance_Company_Null"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{d8099285-2f97-4aed-b6c6-9fb60b7ccc7e}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task_Handling_Insurance_Company_Null"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{6434B82E-BAD5-43BF-9326-4DC970F9B68E}"
+              SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA; From [dbo].[Stg_Tigist_Segni_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL&#xA; )&#xA; begin&#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;Select DISTINCT MortgageInsuranceCompany,&#xA; MortgageInsuranceCompany   as Insurance_Company&#xA;From [dbo].[Stg_Tigist_Segni_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL&#xA;end&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -12702,7 +12813,14 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{6434B82E-BAD5-43BF-9326-4DC970F9B68E}"
-              SQLTask:SqlStatementSource="SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA; FROM  [dbo].[Stg_Tigist_Segni_QL]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM  [dbo].[Stg_Tigist_Segni_QL]    &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM  [dbo].[Stg_Tigist_Segni_QL]&#xA;&#x9;&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY,-4,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="SourceName"
+                SQLTask:DtsVariableName="User::VarSourceName" />
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="MAXLastModifiedDate"
+                SQLTask:DtsVariableName="User::VarLastModifiedDate" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="User::VarSourceName"
@@ -12742,7 +12860,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
-              TaskOperationType="DeleteDirectoryContent"
+              TaskOperationType="DeleteFile"
               TaskSourcePath="User::varUnzippedFileFolder"
               TaskIsSourceVariable="True" />
           </DTS:ObjectData>
@@ -12768,11 +12886,11 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{9F81CE37-CCE3-4B3D-8132-BEB05543288D}"
+          DTS:DTSID="{AE440F9E-4CA3-48EE-9F81-A1E459BF2DA2}"
           DTS:From="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
-          DTS:To="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\File System Task_Delete_SimpleNexus_bakFile" />
+          DTS:To="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Handling_Insurance_Company_Null" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
@@ -12781,6 +12899,14 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
           DTS:To="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Max_LastModified_Date" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{43DA30F7-DDB1-4E5E-A42E-E2B7A810B516}"
+          DTS:From="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Handling_Insurance_Company_Null"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 4"
+          DTS:To="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\File System Task_Delete_SimpleNexus_bakFile" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -13638,7 +13764,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="212.8,41.6"
           Id="Package\Execute SQL Task_ETL_Log"
-          TopLeft="395.194430807125,978.222229449662" />
+          TopLeft="408.527763610639,1022.42222980093" />
         <NodeLayout
           Size="290.4,41.6"
           Id="Package\Foreach Loop Container_Rename and Move_Files\Execute Process Task_UnzipSimpleNexusQB"
@@ -13703,11 +13829,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="272,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile"
-          TopLeft="75.4999972184506,233.927457020417" />
+          TopLeft="77.1666638188899,239.994123735297" />
         <NodeLayout
           Size="360,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Delete_SimpleNexusQB_SourceRecords"
           TopLeft="34.9190319062637,162.079089971611" />
+        <NodeLayout
+          Size="336.8,41.6"
+          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Handling_Insurance_Company_Null"
+          TopLeft="51.76665179862,309.466669463052" />
         <NodeLayout
           Size="282.4,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Execute SQL Task_Max_LastModified_Date"
@@ -13719,7 +13849,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="300,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\File System Task_Delete_SimpleNexus_bakFile"
-          TopLeft="61.2999764561663,312.866670971447" />
+          TopLeft="86.2999754627558,396.066671632661" />
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint]"
           TopLeft="214.376171179019,131.677782028605">
@@ -13744,18 +13874,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint 1]"
-          TopLeft="213.209514562357,203.679089971611">
+          TopLeft="214.042847862577,203.679089971611">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30.2483670488062"
+              EndConnector="0,36.3150337636861"
               Start="0,0"
-              End="0,22.7483670488062">
+              End="0,28.8150337636861">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.7483670488062" />
+                    End="0,28.8150337636861" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13766,18 +13896,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint 2]"
-          TopLeft="211.399986837308,275.527457020417">
+          TopLeft="216.666657808755,281.594123735297">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.3392139510297"
+              EndConnector="0,27.8725457277545"
               Start="0,0"
-              End="0,29.8392139510297">
+              End="0,20.3725457277545">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.8392139510297" />
+                    End="0,20.3725457277545" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13808,39 +13938,73 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="415.2,424"
-          Size="415.2,467.2"
-          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans"
-          TopLeft="322.499987185003,434.200003120105" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="530.099987185003,901.400003120105">
+          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans.PrecedenceConstraints[Constraint 4]"
+          TopLeft="220.16665179862,351.066669463052">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-28.505556377878,76.8222263295569"
+              EndConnector="16.1333236641358,45.0000021696095"
               Start="0,0"
-              End="-28.505556377878,69.3222263295569">
+              End="16.1333236641358,37.5000021696095">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.4111131647784" />
+                    End="0,18.5000010848048" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.4111131647784"
-                    Point2="0,38.4111131647784"
-                    Point3="-4,38.4111131647784" />
+                    Point1="0,18.5000010848048"
+                    Point2="0,22.5000010848048"
+                    Point3="4,22.5000010848048" />
                   <mssgle:LineSegment
-                    End="-24.505556377878,38.4111131647784" />
+                    End="12.1333236641358,22.5000010848048" />
                   <mssgle:CubicBezierSegment
-                    Point1="-24.505556377878,38.4111131647784"
-                    Point2="-28.505556377878,38.4111131647784"
-                    Point3="-28.505556377878,42.4111131647784" />
+                    Point1="12.1333236641358,22.5000010848048"
+                    Point2="16.1333236641358,22.5000010848048"
+                    Point3="16.1333236641358,26.5000010848048" />
                   <mssgle:LineSegment
-                    End="-28.505556377878,69.3222263295569" />
+                    End="16.1333236641358,37.5000021696095" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="515.2,492.8"
+          Size="515.2,536"
+          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans"
+          TopLeft="322.499987185003,434.200003120105" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="580.099987185003,970.200003120105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-65.1722235743638,52.222226680828"
+              Start="0,0"
+              End="-65.1722235743638,44.722226680828">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.111113340414" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.111113340414"
+                    Point2="0,26.111113340414"
+                    Point3="-4,26.111113340414" />
+                  <mssgle:LineSegment
+                    End="-61.1722235743638,26.111113340414" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-61.1722235743638,26.111113340414"
+                    Point2="-65.1722235743638,26.111113340414"
+                    Point3="-65.1722235743638,30.111113340414" />
+                  <mssgle:LineSegment
+                    End="-65.1722235743638,44.722226680828" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13889,26 +14053,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-168.449992797773,85.2666691944338"
+              EndConnector="-118.449992797773,85.2666691944336"
               Start="0,0"
-              End="-168.449992797773,77.7666691944338">
+              End="-118.449992797773,77.7666691944336">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.6333345972169" />
+                    End="0,38.6333345972168" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,38.6333345972169"
-                    Point2="0,42.6333345972169"
-                    Point3="-4,42.6333345972169" />
+                    Point1="0,38.6333345972168"
+                    Point2="0,42.6333345972168"
+                    Point3="-4,42.6333345972168" />
                   <mssgle:LineSegment
-                    End="-164.449992797773,42.6333345972169" />
+                    End="-114.449992797773,42.6333345972168" />
                   <mssgle:CubicBezierSegment
-                    Point1="-164.449992797773,42.6333345972169"
-                    Point2="-168.449992797773,42.6333345972169"
-                    Point3="-168.449992797773,46.6333345972169" />
+                    Point1="-114.449992797773,42.6333345972168"
+                    Point2="-118.449992797773,42.6333345972168"
+                    Point3="-118.449992797773,46.6333345972168" />
                   <mssgle:LineSegment
-                    End="-168.449992797773,77.7666691944338" />
+                    End="-118.449992797773,77.7666691944336" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14060,240 +14224,270 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="264.8,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Derived Column_ReplaceNull_Dunateak"
-          TopLeft="656.56664067242,209.933334194289" />
+          TopLeft="11.5666663024165,323.466668429904" />
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Derived Column 1"
-          TopLeft="752.499970098337,119.866667314105" />
+          TopLeft="135.833327935801,211.733334710862" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\OLE DB Source"
-          TopLeft="119.999995231628,30.333333574401" />
+          TopLeft="119.166661931408,17.3333334710863" />
         <NodeLayout
           Size="280,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Fuzzy Lookup_MorgageInsuranceCompany"
-          TopLeft="9.73333320087872,328.066669153107" />
+          TopLeft="658.299974668027,322.866669111781" />
         <NodeLayout
           Size="275.2,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Row Count"
-          TopLeft="45.8333315120807,115.866664255989" />
+          TopLeft="663.333306974836,114.999997582435" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\OLE DB Destination"
-          TopLeft="665.277751342016,329.444446549769" />
+          TopLeft="131.944439201444,446.444447479602" />
         <NodeLayout
           Size="342.4,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_BorrFirstName_BorrLastName_NotTest"
-          TopLeft="593.366643851335,37.4666667355435" />
+          TopLeft="50.0333321081275,114.600000681878" />
         <NodeLayout
           Size="267.2,41.6"
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Lookup_MarketSource"
-          TopLeft="20.7333326048323,211.400001343091" />
+          TopLeft="591.566643255288,214.000001363754" />
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[Row Count Output 1]"
-          TopLeft="321.033331512081,138.666665785047">
+          TopLeft="800.933306974836,156.599997582435">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="431.466638586257,0"
+              EndConnector="-584.299979039036,55.1333371284276"
               Start="0,0"
-              End="423.966638586257,0">
+              End="-584.299979039036,47.6333371284276">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="423.966638586257,0" />
+                    End="0,23.5666685642138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5666685642138"
+                    Point2="0,27.5666685642138"
+                    Point3="-4,27.5666685642138" />
+                  <mssgle:LineSegment
+                    End="-580.299979039036,27.5666685642138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-580.299979039036,27.5666685642138"
+                    Point2="-584.299979039036,27.5666685642138"
+                    Point3="-584.299979039036,31.5666685642138" />
+                  <mssgle:LineSegment
+                    End="-584.299979039036,47.6333371284276" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[OLE DB Source Output]"
-          TopLeft="271.999995231628,54.7000001549723">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="321.366648619707,0"
-              Start="0,0"
-              End="313.866648619707,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="313.866648619707,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[Lookup Match Output]"
-          TopLeft="287.933332604832,231.46666776869">
+          TopLeft="725.166643255288,255.600001363754">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="368.633308067588,0"
+              EndConnector="-581.199976952871,67.8666670661501"
               Start="0,0"
-              End="361.133308067588,0">
+              End="-581.199976952871,60.3666670661501">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="361.133308067588,0" />
+                    End="0,29.933333533075" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.933333533075"
+                    Point2="0,33.933333533075"
+                    Point3="-4,33.933333533075" />
+                  <mssgle:LineSegment
+                    End="-577.199976952871,33.933333533075" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-577.199976952871,33.933333533075"
+                    Point2="-581.199976952871,33.933333533075"
+                    Point3="-581.199976952871,37.933333533075" />
+                  <mssgle:LineSegment
+                    End="-581.199976952871,60.3666670661501" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="132.375267315044,5,96.3827734375,11.609375"
+              BoundingBox="-338.791375195186,38.933333533075,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[Fuzzy Lookup Output]"
-          TopLeft="289.733333200879,349.555557851438">
+          TopLeft="798.299974668027,364.466669111781">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="375.544418141137,0"
+              EndConnector="-580.755535466583,81.9777783678204"
               Start="0,0"
-              End="368.044418141137,0">
+              End="-580.755535466583,74.4777783678204">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="368.044418141137,0" />
+                    End="0,36.9888891839102" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.9888891839102"
+                    Point2="0,40.9888891839102"
+                    Point3="-4,40.9888891839102" />
+                  <mssgle:LineSegment
+                    End="-576.755535466583,40.9888891839102" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-576.755535466583,40.9888891839102"
+                    Point2="-580.755535466583,40.9888891839102"
+                    Point3="-580.755535466583,44.9888891839102" />
+                  <mssgle:LineSegment
+                    End="-580.755535466583,74.4777783678204" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[Derived Column Output1]"
-          TopLeft="788.96664067242,251.533334194289">
+          TopLeft="276.366666302416,343.966668770843">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-639.233307471541,76.533334958818"
+              EndConnector="381.933308365611,0"
               Start="0,0"
-              End="-639.233307471541,69.033334958818">
+              End="374.433308365611,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.266667479409" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.266667479409"
-                    Point2="0,38.266667479409"
-                    Point3="-4,38.266667479409" />
-                  <mssgle:LineSegment
-                    End="-635.233307471541,38.266667479409" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-635.233307471541,38.266667479409"
-                    Point2="-639.233307471541,38.266667479409"
-                    Point3="-639.233307471541,42.266667479409" />
-                  <mssgle:LineSegment
-                    End="-639.233307471541,69.033334958818" />
+                    End="374.433308365611,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[Derived Column Output]"
-          TopLeft="833.299970098337,161.466667314105">
+          TopLeft="297.433327935801,233.666668037308">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-678.966637493505,49.9333340289859"
+              EndConnector="294.133315319487,0"
               Start="0,0"
-              End="-678.966637493505,42.4333340289859">
+              End="286.633315319487,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.9666670144929" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.9666670144929"
-                    Point2="0,24.9666670144929"
-                    Point3="-4,24.9666670144929" />
-                  <mssgle:LineSegment
-                    End="-674.966637493505,24.9666670144929" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-674.966637493505,24.9666670144929"
-                    Point2="-678.966637493505,24.9666670144929"
-                    Point3="-678.966637493505,28.9666670144929" />
-                  <mssgle:LineSegment
-                    End="-678.966637493505,42.4333340289859" />
+                    End="286.633315319487,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[BorrFirstorLastName_NotTest]"
-          TopLeft="764.566643851335,79.0666667355435">
+          TopLeft="392.433332108128,135.599999132156">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-581.133312339254,36.7999975204463"
+              EndConnector="270.899974866709,0"
               Start="0,0"
-              End="-581.133312339254,29.2999975204463">
+              End="263.399974866709,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.3999987602232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.3999987602232"
-                    Point2="0,18.3999987602232"
-                    Point3="-4,18.3999987602232" />
-                  <mssgle:LineSegment
-                    End="-577.133312339254,18.3999987602232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-577.133312339254,18.3999987602232"
-                    Point2="-581.133312339254,18.3999987602232"
-                    Point3="-581.133312339254,22.3999987602232" />
-                  <mssgle:LineSegment
-                    End="-581.133312339254,29.2999975204463" />
+                    End="263.399974866709,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-302.017632732127,23.3999987602232,22.901953125,11.2822265625"
+              BoundingBox="120.249010870854,5,22.901953125,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="240.8,41.6"
+          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile\Conditional Split_LastModifiedDate"
+          TopLeft="789.166635308002,12.1333334297604" />
+        <EdgeLayout
+          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[OLE DB Source Output]"
+          TopLeft="271.166661931408,35.5333334504233">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="517.999973376594,0"
+              Start="0,0"
+              End="510.499973376594,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="510.499973376594,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container_Restore_SimpleNexusDB and Load QuickenLoans\Data Flow Task_SimpleNexusQB_bakFile.Paths[KEEP]"
+          TopLeft="909.566635308002,53.7333334297604">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-688.333303199875,60.8666672521171"
+              Start="0,0"
+              End="-688.333303199875,53.3666672521171">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4333336260586" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.4333336260586"
+                    Point2="0,30.4333336260586"
+                    Point3="-4,30.4333336260586" />
+                  <mssgle:LineSegment
+                    End="-684.333303199875,30.4333336260586" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-684.333303199875,30.4333336260586"
+                    Point2="-688.333303199875,30.4333336260586"
+                    Point3="-688.333303199875,34.4333336260586" />
+                  <mssgle:LineSegment
+                    End="-688.333303199875,53.3666672521171" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-356.011573474937,35.4333336260586,23.68984375,9.2705078125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
