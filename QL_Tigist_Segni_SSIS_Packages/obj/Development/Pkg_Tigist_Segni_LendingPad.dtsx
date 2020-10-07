@@ -5,41 +5,22 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-MOMS2QA"
   DTS:CreatorName="DESKTOP-MOMS2QA\yaphe"
+  DTS:DelayValidation="True"
   DTS:DTSID="{7F6C04AD-5CF2-43E4-B2DD-4FD505DEB035}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Tigist_Segni_LendingPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="366"
-  DTS:VersionGUID="{D2E929EE-25EC-432D-8BF2-60A58362FDC5}">
+  DTS:VersionBuild="409"
+  DTS:VersionGUID="{80C03C8E-C743-447B-8A58-7E15E2490D63}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{3D640FF3-5199-44B2-8E4E-41802C54B4ED}"
-      DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Integrated Security=True;Application Name=SSIS-Pkg_Tigist_Segni_QuickenLoan 1-{3D640FF3-5199-44B2-8E4E-41802C54B4ED}DESKTOP-MOMS2QA.QLSSISLOG;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG 1]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{42A81DF6-43AB-418D-80FF-C9F720278FA5}"
-      DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Integrated Security=True;Application Name=SSIS-Pkg_Tigist_Segni_LendingQB-{42A81DF6-43AB-418D-80FF-C9F720278FA5}DESKTOP-MOMS2QA.QLSSISLOG 1;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3941621C-4666-4393-A928-17688717ADC7}"
+      DTS:DTSID="{E5D0ADCF-6AC3-4DC3-B2E0-7A1CBC0F85C3}"
       DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -47,18 +28,9 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{091C288B-8B9E-469F-A0A8-38D9334E7CBE}"
-      DTS:ObjectName="DESKTOP-MOMS2QA.STGQL">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LendingPad_Archive]"
       DTS:CreationName="FILE"
+      DTS:DelayValidation="True"
       DTS:DTSID="{D6FD3FDE-974A-4F6E-8D47-3C48E39AE103}"
       DTS:ObjectName="LendingPad_Archive">
       <DTS:ObjectData>
@@ -111,7 +83,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/27/2020 1:53:27 PM</DTS:VariableValue>
+        DTS:DataType="7">10/7/2020 12:47:36 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -149,7 +121,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarFullArchiveFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-09-27-13-53-26.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-10-07-12-47-35.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -167,7 +139,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarLastModifiedDate">
       <DTS:VariableValue
-        DTS:DataType="8">DATEADD("YY",-20,GETDATE())</DTS:VariableValue>
+        DTS:DataType="7">9/29/2000 9:29:00 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -260,7 +232,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/27/2020 1:53:27 PM</DTS:VariableValue>
+        DTS:DataType="7">10/7/2020 12:47:36 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -407,7 +379,7 @@
       DTS:refId="Package\Execute SQL Task_ETL_Log"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{4FEBAB21-CEA5-4CC4-8334-A54F2EE98F2B}"
+      DTS:DTSID="{1E4532B3-C974-4D92-8DBD-F58423624F75}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_ETL_Log"
@@ -416,7 +388,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3941621C-4666-4393-A928-17688717ADC7}"
+          SQLTask:Connection="{E5D0ADCF-6AC3-4DC3-B2E0-7A1CBC0F85C3}"
           SQLTask:SqlStatementSource="DECLARE&#xA;  @PackageID uniqueidentifier  ,&#xA; @PackageName varchar(500)  ,&#xA; @SourceName varchar(100) ,&#xA; @Runtime datetime ,&#xA; @RunBy varchar(100) ,&#xA; @NumberOfRowsInserted int ,&#xA; @LastModifiedDate datetime &#xA;&#xA;   &#xA; SET @PackageID     =  ?&#xA; SET @PackageName    =  ?&#xA; SET @SourceName  =  ?&#xA; SET @Runtime  =  ?&#xA; SET @RunBy    =  ?&#xA; SET @NumberOfRowsInserted    =  ?&#xA; SET @LastModifiedDate  =  ?&#xA; &#xA;&#xA; EXEC uspQuicken_Loans_ETL_Log &#xA; @PackageID    ,&#xA; @PackageName    ,&#xA; @SourceName   ,&#xA; @Runtime  ,&#xA; @RunBy   ,&#xA; @NumberOfRowsInserted   ,&#xA; @LastModifiedDate " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -515,7 +487,7 @@
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container_Rename and Move_Files\File System Task_Rename and Move"
           DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-09-27-13-53-26.zip"
+          DTS:Description="C:\SSIS\BulkFiles\LendingPad_Archive\LendingPad.Zip2020-10-07-12-47-35.zip"
           DTS:DTSID="{BD21DB6F-5732-4EB7-8885-977D082354B7}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
@@ -540,7 +512,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Foreach Loop Container_Rename and Move_Files.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{A5E5CFB1-9350-42DF-AA7F-3547EADF669B}"
+          DTS:DTSID="{A5FDD711-F811-4BFC-B844-DB24C0A6FE1F}"
           DTS:From="Package\Foreach Loop Container_Rename and Move_Files\Execute Process Task_UnzipLendingPad"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -595,36 +567,6 @@
           Language="CSharp"
           ReadOnlyVariables="System::PackageName,System::StartTime,User::VarFileName,User::VarFromEmail,User::VarLocalFolder,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerport,User::VarSubject,User::VarToEmail"
           ReadWriteVariables="User::VarBody">
-          <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_584512c6d7f844ecb97c4c299b9186c4")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_584512c6d7f844ecb97c4c299b9186c4")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -744,6 +686,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_584512c6d7f844ecb97c4c299b9186c4.Properties.Settings.get_Default():ST_584512c6d7f844ecb97c4c299b9186c4.Properties.Sett" +
+    "ings")]
+
+namespace ST_584512c6d7f844ecb97c4c299b9186c4.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -999,34 +970,35 @@ namespace ST_584512c6d7f844ecb97c4c299b9186c4
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_584512c6d7f844ecb97c4c299b9186c4")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_584512c6d7f844ecb97c4c299b9186c4")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_584512c6d7f844ecb97c4c299b9186c4.Properties.Settings.get_Default():ST_584512c6d7f844ecb97c4c299b9186c4.Properties.Sett" +
-    "ings")]
-
-namespace ST_584512c6d7f844ecb97c4c299b9186c4.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -1262,35 +1234,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           ReadOnlyVariables="User::VarFileName,User::VarLocalFolder"
           ReadWriteVariables="User::VarFileExistFlag">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_028f3a1e903942d29aaf925ec10b1f8c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_028f3a1e903942d29aaf925ec10b1f8c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1519,8 +1470,8 @@ namespace ST_028f3a1e903942d29aaf925ec10b1f8c
             {
                 Dts.Variables["User::VarFileExistFlag"].Value = 0;
             }
-            MessageBox.Show(FilePath);
-            MessageBox.Show(Dts.Variables["User::VarFileExistFlag"].Value.ToString());
+          // MessageBox.Show(FilePath);
+           // MessageBox.Show(Dts.Variables["User::VarFileExistFlag"].Value.ToString());
             Dts.TaskResult = (int)ScriptResults.Success;
 
         }
@@ -1635,7 +1586,7 @@ namespace ST_028f3a1e903942d29aaf925ec10b1f8c
     <msb:CodeName>ST_028f3a1e903942d29aaf925ec10b1f8c</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_028f3a1e903942d29aaf925ec10b1f8c</msb:DisplayName>
-    <msb:ProjectId>{18E5D301-EE3B-462D-B52D-6FC029691024}</msb:ProjectId>
+    <msb:ProjectId>{78B247AA-45DC-4673-8871-B19F44095023}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_028f3a1e903942d29aaf925ec10b1f8c.csproj" />
@@ -1677,14 +1628,35 @@ namespace ST_028f3a1e903942d29aaf925ec10b1f8c.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_028f3a1e903942d29aaf925ec10b1f8c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_028f3a1e903942d29aaf925ec10b1f8c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1756,112 +1728,112 @@ namespace ST_028f3a1e903942d29aaf925ec10b1f8c.Properties {
           <BinaryItem
             Name="ST_028f3a1e903942d29aaf925ec10b1f8c.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAPtxZV8AAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAJi8A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDALNYdV8AAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAmi4A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAANQuAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAEguAABPAAAAAEAAAGwEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAALA8AAAAgAAAAEAAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAASAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAGAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAI
-LwAAAAAAAEgAAAACAAUAiCEAAJQMAAABAAAAAAAAABwuAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAABMwAwDFAAAAAAAAAAIoEAAACm8RAAAKcgEAAHBvEgAACm8T
-AAAKbxQAAAoCKBAAAApvEQAACnIfAABwbxIAAApvEwAACm8UAAAKKBUAAAolKBYAAAosIgIoEAAA
-Cm8RAAAKckMAAHBvEgAACheMHQAAAW8XAAAKKyACKBAAAApvEQAACnJDAABwbxIAAAoWjB0AAAFv
-FwAACigYAAAKJgIoEAAACm8RAAAKckMAAHBvEgAACm8TAAAKbxQAAAooGAAACiYCKBAAAAoWbxkA
-AAoqHgIoGgAACioeAigbAAAKKq5+AQAABC0ecnEAAHDQAwAAAigcAAAKbx0AAApzHgAACoABAAAE
-fgEAAAQqGn4CAAAEKh4CgAIAAAQqGn4DAAAEKh4CKB8AAAoqLnMIAAAGgAMAAAQqAEJTSkIBAAEA
-AAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAAAEAAAjfgAAbAQAALwFAAAjU3RyaW5ncwAAAAAo
-CgAA5AAAACNVUwAMCwAAEAAAACNHVUlEAAAAHAsAAHgBAAAjQmxvYgAAAAAAAAACAAABVx2gAQkD
-AAAA+gEzABYAAAEAAAAiAAAABQAAAAYAAAAJAAAAAQAAAB8AAAACAAAAEAAAAAIAAAADAAAABAAA
-AAEAAAAFAAAAAQAAAAEAAAAAAJQDAQAAAAAABgA6AmQEBgDJAmQEBgCGAVEEDwDYBAAABgCzARIE
-BgAdAhIEBgD+ARIEBgCwAhIEBgBaAhIEBgBzAhIEBgDKARIEBgDlAQEDCgCOAkMDCgAFAUMDBgDM
-A8UDBgBpAVEEBgBuBcUDBgA0BIQEBgAkBP0DDgA5AX4DDgCaAX4DDgAhAegDBgBOAWQECgBsA0MD
-EgAaBbAAEgB+ALAABgAdA8UDBgCrABAABgABAMUDFgCiBS0FFgCBBS0FBgDQAMUDBgCHAMUDBgCx
-BRIEAAAAAAcAAAAAAAEAAQABABAA3QNKADkAAQABAAAAEACLBOcERQABAAMAAAEQACQF5wRZAAMA
-BwADAQAAUgUAAD0ABAAKABEA0QN8ABEA9QCAABEAbgCEAAYGOQCIAFaAQgWLAFaA1QCLAFAgAAAA
-AIYA4wMGAAEAISEAAAAAhhhEBAYAAQApIQAAAACDGEQEBgABADEhAAAAAJMIMASPAAEAXSEAAAAA
-kwjdAJQAAQBkIQAAAACTCOkAmQABAGwhAAAAAJYIdQWfAAIAcyEAAAAAhhhEBAYAAgB7IQAAAACR
-GEoEpAACAAAAAQD7AgkARAQBABEARAQGABkARAQKACkARAQQADEARAQQADkARAQQAEEARAQQAEkA
-RAQQAFEARAQQAFkARAQQAGEARAQQAGkARAQGAIEARAQGAKkARAQVALkARAQGAHEASgUbAMEAFgUg
-AMkAvAMlANEA5wIrAIkAGwMvANkAZwUzAOEAYAU5ANEA8QI+APEAnQVDAMEAjgUBAHEARAQGAIkA
-RAQGAAEBmQBJAAEBrQVSAJEARARYALEARAQGAAgAFAByAAgAGAB3ACkAcwDfAC4ACwC3AC4AEwDA
-AC4AGwDfAC4AIwDoAC4AKwARAS4AMwARAS4AOwARAS4AQwDoAC4ASwAXAS4AUwARAS4AWwAuAUMA
-YwB3AEkAcwDfAGEAewB3AGMAawB3AAMAAQAEAAMAAAA0BKgAAAD9AK0AAAB5BbIAAgAEAAMAAgAF
-AAUAAQAGAAUAAgAHAAcABIAAAAEAAACOHZ2gAAAAAAAASgAAAAQAAAAAAAAAAAAAAGAAQQAAAAAA
-DwAAAAAAAAAAAAAAaQAkAwAAAAAEAAAAAAAAAAAAAABgAMUDAAAAAA8AAAAAAAAAAAAAAGkAGgAA
-AAAABAAAAAAAAAAAAAAAYAAtBQAAAAAAAAAAAQAAAJUEAAAFAAIAAAAASW50MzIAPE1vZHVsZT4A
-U3lzdGVtLklPAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAG1zY29ybGli
-AFNUXzAyOGYzYTFlOTAzOTQyZDI5YWFmOTI1ZWMxMGIxZjhjAGRlZmF1bHRJbnN0YW5jZQBWYXJp
-YWJsZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBGaWxlAE1pY3Jvc29mdC5T
-cWxTZXJ2ZXIuRHRzLlJ1bnRpbWUAVHlwZQBGYWlsdXJlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJl
-AHJlc291cmNlQ3VsdHVyZQBWU1RBUlRTY3JpcHRPYmplY3RNb2RlbEJhc2UAQXBwbGljYXRpb25T
-ZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1
-dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRv
-ckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVt
-YXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRp
-b25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4
-YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdo
-dEF0dHJpYnV0ZQBTU0lTU2NyaXB0VGFza0VudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21w
-YW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAGdldF9WYWx1ZQBzZXRf
-VmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmluZwBNaWNyb3NvZnQu
-U3FsU2VydmVyLlNjcmlwdFRhc2sATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0
-VGFzawBTY3JpcHRPYmplY3RNb2RlbABTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU1RfMDI4ZjNhMWU5
-MDM5NDJkMjlhYWY5MjVlYzEwYjFmOGMuZGxsAGdldF9JdGVtAFN5c3RlbQBFbnVtAHJlc291cmNl
-TWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24A
-U3lzdGVtLlJlZmxlY3Rpb24AQ3VsdHVyZUluZm8AZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAu
-Y2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMA
-U3lzdGVtLlJlc291cmNlcwBTVF8wMjhmM2ExZTkwMzk0MmQyOWFhZjkyNWVjMTBiMWY4Yy5Qcm9w
-ZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU1RfMDI4ZjNhMWU5MDM5
-NDJkMjlhYWY5MjVlYzEwYjFmOGMuUHJvcGVydGllcwBnZXRfVmFyaWFibGVzAFNldHRpbmdzAFN5
-c3RlbS5XaW5kb3dzLkZvcm1zAFN1Y2Nlc3MAZ2V0X0R0cwBTY3JpcHRSZXN1bHRzAEV4aXN0cwBD
-b25jYXQAT2JqZWN0AGdldF9EZWZhdWx0AERpYWxvZ1Jlc3VsdABzZXRfVGFza1Jlc3VsdABTaG93
-AE1lc3NhZ2VCb3gAZ2V0X0Fzc2VtYmx5AAAAAB1WAGEAcgBMAG8AYwBhAGwARgBvAGwAZABlAHIA
-ACNVAHMAZQByADoAOgBWAGEAcgBGAGkAbABlAE4AYQBtAGUAAC1VAHMAZQByADoAOgBWAGEAcgBG
-AGkAbABlAEUAeABpAHMAdABGAGwAYQBnAABxUwBUAF8AMAAyADgAZgAzAGEAMQBlADkAMAAzADkA
-NAAyAGQAMgA5AGEAYQBmADkAMgA1AGUAYwAxADAAYgAxAGYAOABjAC4AUAByAG8AcABlAHIAdABp
-AGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAe1gK/KmsXUGYQglfn1WHFgAEIAEBCAMgAAEFIAEB
-EREEIAEBDgUgAQERUQQgABJhBCAAEmUFIAESaRwDIAAcAyAADgUAAg4ODgQAAQIOBCABARwFAAER
-fQ4IAAESgIERgIUFIAASgIkHIAIBDhKAiQi3elxWGTTgiQiJhF3NgIDMkQQAAAAABAEAAAADBhJJ
-AwYSTQMGEhACBggDBhEUBAAAEkkEAAASTQUAAQESTQQAABIQAwAAAQQIABJJBAgAEk0ECAASEAgB
-AAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU1RfMDI4
-ZjNhMWU5MDM5NDJkMjlhYWY5MjVlYzEwYjFmOGMAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAy
-MAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFt
-ZRIuTkVUIEZyYW1ld29yayA0Lje0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVz
-b3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwg
-UHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVS
-ZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA/C4AAAAAAAAAAAAAFi8AAAAgAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAgvAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAA
-AP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAoA4AAAAgAAAAEAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAGwEAAAAQAAAAAYAAAASAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAB8
+LgAAAAAAAEgAAAACAAUAXCEAADQMAAABAAAAAAAAAJAtAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABMwAwCZAAAAAAAAAAIoEAAACm8RAAAKcgEAAHBvEgAACm8T
+AAAKbxQAAAoCKBAAAApvEQAACnIfAABwbxIAAApvEwAACm8UAAAKKBUAAAooFgAACiwiAigQAAAK
+bxEAAApyQwAAcG8SAAAKF4wdAAABbxcAAAorIAIoEAAACm8RAAAKckMAAHBvEgAAChaMHQAAAW8X
+AAAKAigQAAAKFm8YAAAKKh4CKBkAAAoqHgIoGgAACiqufgEAAAQtHnJxAABw0AMAAAIoGwAACm8c
+AAAKcx0AAAqAAQAABH4BAAAEKhp+AgAABCoeAoACAAAEKhp+AwAABCoeAigeAAAKKi5zCAAABoAD
+AAAEKgBCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAADcAwAAI34AAEgEAACIBQAA
+I1N0cmluZ3MAAAAA0AkAAOQAAAAjVVMAtAoAABAAAAAjR1VJRAAAAMQKAABwAQAAI0Jsb2IAAAAA
+AAAAAgAAAVcdoAEJAwAAAPoBMwAWAAABAAAAIAAAAAUAAAAGAAAACQAAAAEAAAAeAAAAAgAAABAA
+AAACAAAAAwAAAAQAAAABAAAABAAAAAEAAAABAAAAAACUAwEAAAAAAAYAOgJkBAYAyQJkBAYAhgFR
+BA8A2AQAAAYAswESBAYAHQISBAYA/gESBAYAsAISBAYAWgISBAYAcwISBAYAygESBAYA5QEBAwoA
+jgJDAwoABQFDAwYAzAPFAwYAaQFRBAYAWQXFAwYANASEBAYAJAT9Aw4AOQF+Aw4AmgF+Aw4AIQHo
+AwYATgFkBAoAbANDAxIAGgWwABIAfgCwAAYAHQPFAwYAqwAQAAYAAQDFAwYA0ADFAwYAhwDFAwYA
+fwUSBAAAAAAHAAAAAAABAAEAAQAQAN0DSgA5AAEAAQAAABAAiwTnBEUAAQADAAABEAAkBecEWQAD
+AAcAAwEAAD0FAAA9AAQACgARANEDdAARAPUAeAARAG4AfAAGBjkAgABWgC0FgwBWgNUAgwBQIAAA
+AACGAOMDBgABAPUgAAAAAIYYRAQGAAEA/SAAAAAAgxhEBAYAAQAFIQAAAACTCDAEhwABADEhAAAA
+AJMI3QCMAAEAOCEAAAAAkwjpAJEAAQBAIQAAAACWCGAFlwACAEchAAAAAIYYRAQGAAIATyEAAAAA
+kRhKBJwAAgAAAAEA+wIJAEQEAQARAEQEBgAZAEQECgApAEQEEAAxAEQEEAA5AEQEEABBAEQEEABJ
+AEQEEABRAEQEEABZAEQEEABhAEQEEABpAEQEBgCBAEQEBgCpAEQEFQC5AEQEBgBxADUFGwDBABYF
+IADJALwDJQDRAOcCKwCJABsDLwDZAFIFMwDhAEsFOQDRAPECPgDBAGwFAQBxAEQEBgCJAEQEBgDx
+AJkAQwDxAHsFSgCRAEQEUACxAEQEBgAIABQAagAIABgAbwApAHMA1wAuAAsArwAuABMAuAAuABsA
+1wAuACMA4AAuACsACQEuADMACQEuADsACQEuAEMA4AAuAEsADwEuAFMACQEuAFsAJgFDAGMAbwBJ
+AHMA1wBhAHsAbwBjAGsAbwADAAEABAADAAAANASgAAAA/QClAAAAZAWqAAIABAADAAIABQAFAAEA
+BgAFAAIABwAHAASAAAABAAAAmx05AgAAAAAAAEoAAAAEAAAAAAAAAAAAAABYAEEAAAAAAA8AAAAA
+AAAAAAAAAGEAJAMAAAAABAAAAAAAAAAAAAAAWADFAwAAAAAPAAAAAAAAAAAAAABhABoAAAAAAAAA
+AAABAAAAlQQAAAUAAgAAAAAAAEludDMyADxNb2R1bGU+AFN5c3RlbS5JTwBNaWNyb3NvZnQuU3Fs
+U2VydmVyLk1hbmFnZWREVFMAdmFsdWVfXwBtc2NvcmxpYgBTVF8wMjhmM2ExZTkwMzk0MmQyOWFh
+ZjkyNWVjMTBiMWY4YwBkZWZhdWx0SW5zdGFuY2UAVmFyaWFibGUAUnVudGltZVR5cGVIYW5kbGUA
+R2V0VHlwZUZyb21IYW5kbGUARmlsZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lAFR5
+cGUARmFpbHVyZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAVlNUQVJU
+U2NyaXB0T2JqZWN0TW9kZWxCYXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dz
+YWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVB
+dHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNz
+ZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFt
+ZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVz
+Y3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJs
+eVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdFRh
+c2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29t
+cGF0aWJpbGl0eUF0dHJpYnV0ZQBnZXRfVmFsdWUAc2V0X1ZhbHVlAHZhbHVlAFN5c3RlbS5SdW50
+aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcATWljcm9zb2Z0LlNxbFNlcnZlci5TY3JpcHRUYXNrAE1p
+Y3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlRhc2tzLlNjcmlwdFRhc2sAU2NyaXB0T2JqZWN0TW9kZWwA
+U3lzdGVtLkNvbXBvbmVudE1vZGVsAFNUXzAyOGYzYTFlOTAzOTQyZDI5YWFmOTI1ZWMxMGIxZjhj
+LmRsbABnZXRfSXRlbQBTeXN0ZW0ARW51bQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAFN5c3RlbS5D
+b25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEN1bHR1
+cmVJbmZvAGdldF9SZXNvdXJjZU1hbmFnZXIALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGlj
+cwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU1RfMDI4
+ZjNhMWU5MDM5NDJkMjlhYWY5MjVlYzEwYjFmOGMuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3Vy
+Y2VzAERlYnVnZ2luZ01vZGVzAFNUXzAyOGYzYTFlOTAzOTQyZDI5YWFmOTI1ZWMxMGIxZjhjLlBy
+b3BlcnRpZXMAZ2V0X1ZhcmlhYmxlcwBTZXR0aW5ncwBTdWNjZXNzAGdldF9EdHMAU2NyaXB0UmVz
+dWx0cwBFeGlzdHMAQ29uY2F0AE9iamVjdABnZXRfRGVmYXVsdABzZXRfVGFza1Jlc3VsdABnZXRf
+QXNzZW1ibHkAAB1WAGEAcgBMAG8AYwBhAGwARgBvAGwAZABlAHIAACNVAHMAZQByADoAOgBWAGEA
+cgBGAGkAbABlAE4AYQBtAGUAAC1VAHMAZQByADoAOgBWAGEAcgBGAGkAbABlAEUAeABpAHMAdABG
+AGwAYQBnAABxUwBUAF8AMAAyADgAZgAzAGEAMQBlADkAMAAzADkANAAyAGQAMgA5AGEAYQBmADkA
+MgA1AGUAYwAxADAAYgAxAGYAOABjAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQBy
+AGMAZQBzAAAAwaPBxAmLak+lwQzkEc3rHQAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERUQQgABJh
+BCAAEmUFIAESaRwDIAAcAyAADgUAAg4ODgQAAQIOBCABARwGAAESeRF9BSAAEoCBByACAQ4SgIEI
+t3pcVhk04IkIiYRdzYCAzJEEAAAAAAQBAAAAAwYSSQMGEk0DBhIQAgYIAwYRFAQAABJJBAAAEk0F
+AAEBEk0EAAASEAMAAAEECAASSQQIABJNBAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNl
+cHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NUXzAyOGYzYTFlOTAzOTQyZDI5YWFmOTI1ZWMxMGIx
+ZjhjAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjAAAEkBABouTkVURnJhbWV3b3JrLFZlcnNp
+b249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43tAAAAM7K
+774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVy
+c2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkz
+NGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQ
+QURQtAAAAHAuAAAAAAAAAAAAAIouAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8LgAAAAAAAAAA
+AAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
-AABIAAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
-AAAAAAC9BO/+AAABAAAAAQCdoI4dAAABAJ2gjh0/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+AABIAAAAWEAAAA4EAAAAAAAAAAAAAA4ENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
+AAAAAAC9BO/+AAABAAAAAQA5ApsdAAABADkCmx0/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
 RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
-AG4AAAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAA
+AG4AAAAAAAAAsARuAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABKAwAAAQAwADAA
 MAAwADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABh
 AG4AeQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
 AAAAAFMAVABfADAAMgA4AGYAMwBhADEAZQA5ADAAMwA5ADQAMgBkADIAOQBhAGEAZgA5ADIANQBl
-AGMAMQAwAGIAMQBmADgAYwAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
-LgA3ADUANgA2AC4ANAAxADEAMQA3AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
-AFMAVABfADAAMgA4AGYAMwBhADEAZQA5ADAAMwA5ADQAMgBkADIAOQBhAGEAZgA5ADIANQBlAGMA
-MQAwAGIAMQBmADgAYwAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0
-AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMgAwAAAAKgABAAEATABlAGcAYQBsAFQA
-cgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBu
-AGEAbQBlAAAAUwBUAF8AMAAyADgAZgAzAGEAMQBlADkAMAAzADkANAAyAGQAMgA5AGEAYQBmADkA
-MgA1AGUAYwAxADAAYgAxAGYAOABjAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
-AGUAAAAAAFMAVABfADAAMgA4AGYAMwBhADEAZQA5ADAAMwA5ADQAMgBkADIAOQBhAGEAZgA5ADIA
-NQBlAGMAMQAwAGIAMQBmADgAYwAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
-ADEALgAwAC4ANwA1ADYANgAuADQAMQAxADEANwAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
-VgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANwA1ADYANgAuADQAMQAxADEANwAAAAAAAAAAAAAAAAAA
+AGMAMQAwAGIAMQBmADgAYwAAADoADQABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
+LgA3ADUANwA5AC4ANQA2ADkAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBU
+AF8AMAAyADgAZgAzAGEAMQBlADkAMAAzADkANAAyAGQAMgA5AGEAYQBmADkAMgA1AGUAYwAxADAA
+YgAxAGYAOABjAC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABD
+AG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAyADAAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEA
+ZABlAG0AYQByAGsAcwAAAAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBt
+AGUAAABTAFQAXwAwADIAOABmADMAYQAxAGUAOQAwADMAOQA0ADIAZAAyADkAYQBhAGYAOQAyADUA
+ZQBjADEAMABiADEAZgA4AGMALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAA
+AAAAUwBUAF8AMAAyADgAZgAzAGEAMQBlADkAMAAzADkANAAyAGQAMgA5AGEAYQBmADkAMgA1AGUA
+YwAxADAAYgAxAGYAOABjAAAAPgANAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAu
+ADAALgA3ADUANwA5AC4ANQA2ADkAAAAAAEIADQABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMA
+aQBvAG4AAAAxAC4AMAAuADcANQA3ADkALgA1ADYAOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAAAoPwAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAACcPgAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2510,6 +2482,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                               name="FriendlyExpression">(DT_STR,128,1252)@[User::VarSourceName]</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1.Outputs[Derived Column Output].Columns[LoanProcessorName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="128"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1.Outputs[Derived Column Output].Columns[LoanProcessorName]"
+                          name="LoanProcessorName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_STR,128,1252)#{Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Loan_Processor_Name]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_STR,128,1252)Loan_Processor_Name</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -2688,8 +2684,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
+                      connectionManagerID="{C673912C-B180-427D-A5A6-8995696DF851}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-MOMS2QA.STGQL 1]"
                       description="Microsoft SQL Server connection and database in which the fuzzy lookup reference table is located and where the fuzzy match index table will be stored and accessed."
                       name="OleDbConnection" />
                   </connections>
@@ -5202,39 +5198,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[Loan_Processor_Name]"
-                          cachedDataType="wstr"
-                          cachedLength="101"
-                          cachedName="Loan_Processor_Name"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Loan_Processor_Name]">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Name of the reference table column with which the input column should be matched."
-                              name="JoinToReferenceColumn"
-                              state="escaped" />
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the match is a fuzzy or an exact match."
-                              name="JoinType"
-                              typeConverter="tcJoinType">2</property>
-                            <property
-                              dataType="System.Single"
-                              description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                              name="MinSimilarity">0</property>
-                            <property
-                              dataType="System.UInt32"
-                              description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                              name="FuzzyComparisonFlags"
-                              typeConverter="tcComparisonFlags">1</property>
-                            <property
-                              dataType="System.UInt32"
-                              description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                              name="FuzzyComparisonFlagsEx"
-                              typeConverter="tcComparisonFlagsEx">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[Underwriter_Name]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -5839,40 +5802,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceCode]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="1"
-                          cachedName="MarketSourceCode"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Name of the reference table column with which the input column should be matched."
-                              name="JoinToReferenceColumn"
-                              state="escaped" />
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the match is a fuzzy or an exact match."
-                              name="JoinType"
-                              typeConverter="tcJoinType">2</property>
-                            <property
-                              dataType="System.Single"
-                              description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                              name="MinSimilarity">0</property>
-                            <property
-                              dataType="System.UInt32"
-                              description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                              name="FuzzyComparisonFlags"
-                              typeConverter="tcComparisonFlags">1</property>
-                            <property
-                              dataType="System.UInt32"
-                              description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                              name="FuzzyComparisonFlagsEx"
-                              typeConverter="tcComparisonFlagsEx">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MorgageInsuranceCompany]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -6150,6 +6079,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           cachedLength="128"
                           cachedName="SourceName"
                           lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1.Outputs[Derived Column Output].Columns[SourceName]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Name of the reference table column with which the input column should be matched."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies whether the match is a fuzzy or an exact match."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[LoanProcessorName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="128"
+                          cachedName="LoanProcessorName"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1.Outputs[Derived Column Output].Columns[LoanProcessorName]">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Name of the reference table column with which the input column should be matched."
+                              name="JoinToReferenceColumn"
+                              state="escaped" />
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies whether the match is a fuzzy or an exact match."
+                              name="JoinType"
+                              typeConverter="tcJoinType">2</property>
+                            <property
+                              dataType="System.Single"
+                              description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
+                              name="MinSimilarity">0</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
+                              name="FuzzyComparisonFlags"
+                              typeConverter="tcComparisonFlags">1</property>
+                            <property
+                              dataType="System.UInt32"
+                              description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
+                              name="FuzzyComparisonFlagsEx"
+                              typeConverter="tcComparisonFlagsEx">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="MarketSourceName"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]">
                           <properties>
                             <property
                               dataType="System.Null"
@@ -8155,30 +8152,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Loan_Processor_Name]"
-                          dataType="wstr"
-                          length="101"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Loan_Processor_Name]"
-                          name="Loan_Processor_Name">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the reference table column that is copied to the output for each match result."
-                              name="CopyFromReferenceColumn"
-                              state="escaped" />
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Loan_Processor_Name]}</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the column is used to indicate confidence or similarity."
-                              name="ColumnType"
-                              typeConverter="tcColumnType">0</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Underwriter_Name]"
                           codePage="1252"
                           dataType="str"
@@ -8669,12 +8642,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]"
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanProcessorName]"
                           codePage="1252"
                           dataType="str"
-                          length="1"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]"
-                          name="MarketSourceCode">
+                          length="128"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanProcessorName]"
+                          name="LoanProcessorName">
                           <properties>
                             <property
                               dataType="System.Null"
@@ -8685,7 +8658,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]}</property>
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1.Outputs[Derived Column Output].Columns[LoanProcessorName]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies whether the column is used to indicate confidence or similarity."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
+                          name="MarketSourceName">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the reference table column that is copied to the output for each match result."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]}</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies whether the column is used to indicate confidence or similarity."
@@ -12424,8 +12422,8 @@ where [refTable].[MarketSourceCode] = ?</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
+                      connectionManagerID="{C673912C-B180-427D-A5A6-8995696DF851}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-MOMS2QA.STGQL 1]"
                       description="Connection manager used to access lookup data."
                       name="OleDbConnection" />
                   </connections>
@@ -12465,19 +12463,19 @@ where [refTable].[MarketSourceCode] = ?</property>
                       synchronousInputId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Inputs[Lookup Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]"
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Copy Column"
-                          length="1"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]"
-                          name="MarketSourceCode"
+                          length="100"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]"
+                          name="MarketSourceName"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
                               dataType="System.String"
                               description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn">MarketSourceCode</property>
+                              name="CopyFromReferenceColumn">MarketSourceName</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -12531,7 +12529,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[stg_Tigist_Segni_QL]</property>
+                      name="OpenRowset">[dbo].[Stg_Tigist_Segni_QL]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -12574,8 +12572,8 @@ where [refTable].[MarketSourceCode] = ?</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
+                      connectionManagerID="{C673912C-B180-427D-A5A6-8995696DF851}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-MOMS2QA.STGQL 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13048,14 +13046,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
                           lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[ProcessorLastName]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceCode]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="1"
-                          cachedName="MarketSourceCode"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketsourceName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]" />
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AmortizationType]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -13206,14 +13196,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
                           lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanType]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSource]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="7"
-                          cachedName="MarketSource"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSource]" />
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MilestoneStatus]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -13321,6 +13303,38 @@ where [refTable].[MarketSourceCode] = ?</property>
                           cachedName="LoanOfficer"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
                           lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanOfficer]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanProcessorName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="128"
+                          cachedName="LoanProcessorName"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanProcessorName]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="128"
+                          cachedName="Insurance_Company"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="MarketSourceName"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketsourceName]"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSource]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="7"
+                          cachedName="MarketSource"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
+                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSource]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -13860,6 +13874,12 @@ where [refTable].[MarketSourceCode] = ?</property>
                           dataType="str"
                           length="100"
                           name="MarketsourceName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                          codePage="1252"
+                          dataType="str"
+                          length="128"
+                          name="Insurance_Company" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -13967,6 +13987,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container\Execute SQL Task_Delete_LendingPad_SourceRecords"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
+          DTS:Disabled="True"
           DTS:DTSID="{F04C066C-626D-45B2-AE32-A2214D25D1C4}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -13993,13 +14014,14 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{091C288B-8B9E-469F-A0A8-38D9334E7CBE}"
+              SQLTask:Connection="{C673912C-B180-427D-A5A6-8995696DF851}"
               SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA; From [dbo].[Stg_Tigist_Segni_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL&#xA; )&#xA; begin&#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;Select DISTINCT MortgageInsuranceCompany,&#xA; MortgageInsuranceCompany   as Insurance_Company&#xA;From [dbo].[Stg_Tigist_Segni_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL&#xA;end&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Sequence Container\Execute SQL Task_Max_LastModified_Date"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DelayValidation="True"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{3BD768DC-BF3B-45F6-8AE0-A17216C39484}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -14012,21 +14034,12 @@ where [refTable].[MarketSourceCode] = ?</property>
             DTS:Name="BypassPrepare">@[$Package::ExecuteSQLTask_Max_LastModified_Date_BypassPrepare]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{091C288B-8B9E-469F-A0A8-38D9334E7CBE}"
-              SQLTask:SqlStatementSource="IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM  [dbo].[Stg_Tigist_Segni_QL]    &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM  [dbo].[Stg_Tigist_Segni_QL]&#xA;&#x9;&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY,-4,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END"
+              SQLTask:Connection="{C673912C-B180-427D-A5A6-8995696DF851}"
+              SQLTask:SqlStatementSource="IF EXISTS&#xA;(&#xA;SELECT&#xA;   MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;  FROM    &#x9;[dbo].[Stg_Tigist_Segni_QL]&#x9;where sourcename= 'LendingPad'&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT&#xA;   MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;  FROM    &#x9;[dbo].[Stg_Tigist_Segni_QL]&#x9;where sourcename= 'LendingPad'&#x9;&#x9;&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT  DATEADD(YYYY,-120,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-              <SQLTask:ResultBinding
-                SQLTask:ResultName="SourceName"
-                SQLTask:DtsVariableName="User::VarSourceName" />
               <SQLTask:ResultBinding
                 SQLTask:ResultName="MaxLastModifiedDate"
                 SQLTask:DtsVariableName="User::VarLastModifiedDate" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="0"
-                SQLTask:DtsVariableName="User::VarSourceName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
@@ -14089,7 +14102,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{52FABC22-C3A2-45B2-8D00-4E9CF6C99BDD}"
+      DTS:DTSID="{FEA5D19A-154B-4E3B-87B7-11D286088C44}"
       DTS:From="Package\Sequence Container"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -14164,7 +14177,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{3941621C-4666-4393-A928-17688717ADC7}"
+              SQLTask:Connection="{E5D0ADCF-6AC3-4DC3-B2E0-7A1CBC0F85C3}"
               SQLTask:SqlStatementSource="DECLARE @PackageID uniqueidentifier &#xA;       ,@PackageName  Varchar(100) &#xA;    ,@SourceName  Varchar(100) &#xA;    ,@LoadDate  Datetime   &#xA;    ,@RunBy   Varchar(100) &#xA;    ,@ErrorCode  Varchar(100) &#xA;    ,@ErrorDescription  Varchar(Max)  &#xA;SET @PackageID =? &#xA;SET @PackageName =?  &#xA;SET @SourceName   =? &#xA;SET @LoadDate   =? &#xA;SET @RunBy =? &#xA;SET @ErrorCode   =? &#xA;SET @ErrorDescription    =?  &#xA;EXEC  uspQuicken_Loans_ETL_Error_Log&#xA; &#xA;           @PackageID   &#xA;     ,@PackageName    &#xA;     ,@SourceName     &#xA;     ,@LoadDate     &#xA;     ,@RunBy      &#xA;     ,@ErrorCode    &#xA;     ,@ErrorDescription&#xA; &#xA;                                               " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -14228,36 +14241,6 @@ where [refTable].[MarketSourceCode] = ?</property>
               Language="CSharp"
               ReadOnlyVariables="System::PackageName,User::VarFromEmail,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerport,User::VarSubject,User::VarToEmail"
               ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="ST_04c2e61c23c24f3eb2954b0ca6cb281f.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14477,6 +14460,35 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Settings.get_Default():ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Sett" +
+    "ings")]
+
+namespace ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -14644,34 +14656,35 @@ namespace ST_04c2e61c23c24f3eb2954b0ca6cb281f
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Settings.get_Default():ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Sett" +
-    "ings")]
-
-namespace ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -14937,41 +14950,41 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="212.8,41.6"
           Id="Package\Execute SQL Task_ETL_Log"
-          TopLeft="394.361097506904,898.022228933089" />
+          TopLeft="447.499982217948,895.2000046285" />
         <NodeLayout
           Size="269.6,41.6"
           Id="Package\Foreach Loop Container_Rename and Move_Files\Execute Process Task_UnzipLendingPad"
           TopLeft="25.4999992052718,31.866668967141" />
         <NodeLayout
-          Size="251.2,41.6"
+          Size="251.2,49.6"
           Id="Package\Foreach Loop Container_Rename and Move_Files\File System Task_Rename and Move"
-          TopLeft="44.1333117432071,107.000002045631" />
+          TopLeft="44.9666450434266,133.866668925815" />
         <EdgeLayout
           Id="Package\Foreach Loop Container_Rename and Move_Files.PrecedenceConstraints[Constraint]"
           TopLeft="160.299999205272,73.466668967141">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="9.43331253793522,33.5333330784904"
+              EndConnector="10.2666458381548,60.3999999586737"
               Start="0,0"
-              End="9.43331253793522,26.0333330784904">
+              End="10.2666458381548,52.8999999586737">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.7666665392452" />
+                    End="0,26.1999999793369" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.7666665392452"
-                    Point2="0,16.7666665392452"
-                    Point3="4,16.7666665392452" />
+                    Point1="0,26.1999999793369"
+                    Point2="0,30.1999999793369"
+                    Point3="4,30.1999999793369" />
                   <mssgle:LineSegment
-                    End="5.43331253793522,16.7666665392452" />
+                    End="6.26664583815483,30.1999999793369" />
                   <mssgle:CubicBezierSegment
-                    Point1="5.43331253793522,16.7666665392452"
-                    Point2="9.43331253793522,16.7666665392452"
-                    Point3="9.43331253793522,20.7666665392452" />
+                    Point1="6.26664583815483,30.1999999793369"
+                    Point2="10.2666458381548,30.1999999793369"
+                    Point3="10.2666458381548,34.1999999793369" />
                   <mssgle:LineSegment
-                    End="9.43331253793522,26.0333330784904" />
+                    End="10.2666458381548,52.8999999586737" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14983,8 +14996,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="335.2,231.2"
-          Size="335.2,274.4"
+          PanelSize="335.2,238.4"
+          Size="335.2,281.6"
           Id="Package\Foreach Loop Container_Rename and Move_Files"
           TopLeft="608.549976803861,62.4000004959109" />
         <NodeLayout
@@ -15025,14 +15038,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.134641393429"
+              EndConnector="0,45.1346413934288"
               Start="0,0"
-              End="0,37.634641393429">
+              End="0,37.6346413934288">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.634641393429" />
+                    End="0,37.6346413934288" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15128,18 +15141,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           TopLeft="247.499990165234,376.133335991966" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="498.330543836069,851.333335991966">
+          TopLeft="495.899990165234,851.333335991966">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.6888929411228"
+              EndConnector="57.999992052714,43.8666686365341"
               Start="0,0"
-              End="0,39.1888929411228">
+              End="57.999992052714,36.3666686365341">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.1888929411228" />
+                    End="0,17.933334318267" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.933334318267"
+                    Point2="0,21.933334318267"
+                    Point3="4,21.933334318267" />
+                  <mssgle:LineSegment
+                    End="53.999992052714,21.933334318267" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53.999992052714,21.933334318267"
+                    Point2="57.999992052714,21.933334318267"
+                    Point3="57.999992052714,25.933334318267" />
+                  <mssgle:LineSegment
+                    End="57.999992052714,36.3666686365341" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15184,30 +15209,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="776.149976803861,336.800000495911">
+          TopLeft="776.149976803861,344.000000495911">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-280.249986638627,39.3333354960551"
+              EndConnector="-280.249986638627,32.1333354960551"
               Start="0,0"
-              End="-280.249986638627,31.8333354960551">
+              End="-280.249986638627,24.6333354960551">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.6666677480275" />
+                    End="0,12.0666677480275" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.6666677480275"
-                    Point2="0,19.6666677480276"
-                    Point3="-4,19.6666677480276" />
+                    Point1="0,12.0666677480275"
+                    Point2="0,16.0666677480275"
+                    Point3="-4,16.0666677480275" />
                   <mssgle:LineSegment
-                    End="-276.249986638627,19.6666677480276" />
+                    End="-276.249986638627,16.0666677480275" />
                   <mssgle:CubicBezierSegment
-                    Point1="-276.249986638627,19.6666677480276"
-                    Point2="-280.249986638627,19.6666677480276"
-                    Point3="-280.249986638627,23.6666677480276" />
+                    Point1="-276.249986638627,16.0666677480275"
+                    Point2="-280.249986638627,16.0666677480275"
+                    Point3="-280.249986638627,20.0666677480275" />
                   <mssgle:LineSegment
-                    End="-280.249986638627,31.8333354960551" />
+                    End="-280.249986638627,24.6333354960551" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15254,7 +15279,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="427.683325303264,199.900000960827">
+          TopLeft="427.683325303264,201.700000960827">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15353,25 +15378,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Conditional Split_LastModifiedDate"
           TopLeft="534.999978741011,3.46666669421726" />
         <NodeLayout
-          Size="264.8,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column_ReplaceNull_Dunateak"
-          TopLeft="6.56666650109821,307.400001756351" />
-        <NodeLayout
-          Size="275.2,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Row Count"
-          TopLeft="669.999973376594,95.466664214664" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1"
-          TopLeft="19.9999992052705,186.133334628211" />
+          Size="230.4,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\JSON Source (REST API or File)"
+          TopLeft="85.8333299226231,5.20000004132589" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\OLE DB Destination"
-          TopLeft="24.4444434731103,418.244447376288" />
+          TopLeft="24.4444434731102,418.244447376288" />
         <NodeLayout
           Size="280,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Fuzzy Lookup_MorgageInsuranceCompany"
           TopLeft="716.399971787136,312.866669153108" />
+        <NodeLayout
+          Size="275.2,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Row Count"
+          TopLeft="669.999973376594,95.466664214664" />
         <NodeLayout
           Size="267.2,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Lookup_MarketSource"
@@ -15381,83 +15402,39 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Conditional Split_BorrFirstName_BorrLastName_NotTest"
           TopLeft="22.5333332008794,95.0666673141059" />
         <NodeLayout
-          Size="230.4,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\JSON Source (REST API or File)"
-          TopLeft="85.8333299226231,5.20000004132588" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File.Paths[Derived Column Output]"
-          TopLeft="181.59999920527,207.63333461788">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="504.966640275057,0"
-              Start="0,0"
-              End="497.466640275057,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="497.466640275057,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File.Paths[BorrFirstorLastName_NotTest]"
-          TopLeft="364.933333200879,116.066665764385">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="305.066640175714,0"
-              Start="0,0"
-              End="297.566640175714,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="297.566640175714,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="83.2269333691072,5,131.1127734375,10.7841796875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="161.6,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column 1"
+          TopLeft="19.9999992052705,186.133334628211" />
+        <NodeLayout
+          Size="264.8,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File\Derived Column_ReplaceNull_Dunateak"
+          TopLeft="6.56666650109821,307.400001756351" />
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File.Paths[Row Count Output 1]"
           TopLeft="807.599973376594,137.066664214664">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-706.799974171323,49.0666704135472"
+              EndConnector="-706.799974171323,49.0666704135469"
               Start="0,0"
-              End="-706.799974171323,41.5666704135472">
+              End="-706.799974171323,41.5666704135469">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.5333352067736" />
+                    End="0,20.5333352067735" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.5333352067736"
-                    Point2="0,24.5333352067736"
-                    Point3="-4,24.5333352067736" />
+                    Point1="0,20.5333352067735"
+                    Point2="0,24.5333352067735"
+                    Point3="-4,24.5333352067735" />
                   <mssgle:LineSegment
-                    End="-702.799974171323,24.5333352067736" />
+                    End="-702.799974171323,24.5333352067735" />
                   <mssgle:CubicBezierSegment
-                    Point1="-702.799974171323,24.5333352067736"
-                    Point2="-706.799974171323,24.5333352067736"
-                    Point3="-706.799974171323,28.5333352067736" />
+                    Point1="-702.799974171323,24.5333352067735"
+                    Point2="-706.799974171323,24.5333352067735"
+                    Point3="-706.799974171323,28.5333352067735" />
                   <mssgle:LineSegment
-                    End="-706.799974171323,41.5666704135472" />
+                    End="-706.799974171323,41.5666704135469" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15500,7 +15477,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-388.791373208365,44.1333335744011,96.3827734375,11.609375"
+              BoundingBox="-388.791373208364,44.1333335744011,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15621,6 +15598,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File.Paths[Derived Column Output]"
+          TopLeft="181.59999920527,207.63333461788">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="504.966640275057,0"
+              Start="0,0"
+              End="497.466640275057,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="497.466640275057,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_JSon_File.Paths[BorrFirstorLastName_NotTest]"
+          TopLeft="364.933333200879,116.066665764385">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="305.066640175714,0"
+              Start="0,0"
+              End="297.566640175714,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="297.566640175714,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="83.226933369107,5,131.1127734375,10.7841796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

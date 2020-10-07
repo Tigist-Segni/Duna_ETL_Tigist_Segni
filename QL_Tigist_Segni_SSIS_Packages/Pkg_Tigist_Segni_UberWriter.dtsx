@@ -5,51 +5,22 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-MOMS2QA"
   DTS:CreatorName="DESKTOP-MOMS2QA\yaphe"
+  DTS:DelayValidation="True"
   DTS:DTSID="{57EDBBBA-F4E3-4291-8F69-53FFE322C00C}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Tigist_Segni_UberWriter"
   DTS:PackageType="5"
-  DTS:VersionBuild="214"
-  DTS:VersionGUID="{13EBD25D-059D-4F53-BC49-92A854106BBE}">
+  DTS:VersionBuild="239"
+  DTS:VersionGUID="{03DC67F0-0F30-4DFF-8815-E266B07BFB47}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{51D0A355-2624-4DA0-A393-A6DC360293D1}"
-      DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Integrated Security=True;Application Name=SSIS-Pkg_Tigist_Segni_QuickenLoan 1-{51D0A355-2624-4DA0-A393-A6DC360293D1}DESKTOP-MOMS2QA.QLSSISLOG;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG 1]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{A7B06474-D714-450D-87D9-7041D3B0220E}"
-      DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Integrated Security=True;Application Name=SSIS-Pkg_Tigist_Segni_LendingQB-{A7B06474-D714-450D-87D9-7041D3B0220E}DESKTOP-MOMS2QA.QLSSISLOG 1;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.QLSSISLOG1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{86B178FA-868A-4663-BB33-41C2A61A633F}"
-      DTS:ObjectName="DESKTOP-MOMS2QA.QLSSISLOG1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MOMS2QA;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-MOMS2QA.STGQL]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{F928E6B8-8583-492E-A1FE-5BC054434D86}"
+      DTS:DTSID="{89CA5FB1-5AD2-47F8-ADAD-684E759335A1}"
       DTS:ObjectName="DESKTOP-MOMS2QA.STGQL">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -89,7 +60,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/26/2020 1:26:57 PM</DTS:VariableValue>
+        DTS:DataType="7">10/7/2020 5:58:29 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -103,11 +74,11 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{29D16943-4940-4A73-B3BB-42553AE57DDD}"
-      DTS:IncludeInDebugDump="6789"
+      DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLastModifiedDate">
       <DTS:VariableValue
-        DTS:DataType="7">9/1/2020 8:29:00 PM</DTS:VariableValue>
+        DTS:DataType="7">9/29/2000 9:29:17 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -173,7 +144,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/26/2020 1:26:57 PM</DTS:VariableValue>
+        DTS:DataType="7">10/7/2020 5:58:29 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -326,6 +297,7 @@
       </DTS:EventHandlers>
       <DTS:ObjectData>
         <pipeline
+          autoAdjustBufferSize="true"
           version="1">
           <components>
             <component
@@ -8189,40 +8161,6 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="MarketSourceCode"
-                      lineageId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Name of the reference table column with which the input column should be matched."
-                          name="JoinToReferenceColumn"
-                          state="escaped" />
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the match is a fuzzy or an exact match."
-                          name="JoinType"
-                          typeConverter="tcJoinType">2</property>
-                        <property
-                          dataType="System.Single"
-                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                          name="MinSimilarity">0</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                          name="FuzzyComparisonFlags"
-                          typeConverter="tcComparisonFlags">1</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                          name="FuzzyComparisonFlagsEx"
-                          typeConverter="tcComparisonFlagsEx">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[DC_LeadSource]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -8263,6 +8201,40 @@
                       cachedLength="128"
                       cachedName="DC_MorgageInsuranceCompany"
                       lineageId="Package\Data Flow Task_ADO NET Source\Derived Column_ReplaceNull_Dunateak.Outputs[Derived Column Output].Columns[DC_MorgageInsuranceCompany]">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Name of the reference table column with which the input column should be matched."
+                          name="JoinToReferenceColumn"
+                          state="escaped" />
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the match is a fuzzy or an exact match."
+                          name="JoinType"
+                          typeConverter="tcJoinType">2</property>
+                        <property
+                          dataType="System.Single"
+                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
+                          name="MinSimilarity">0</property>
+                        <property
+                          dataType="System.UInt32"
+                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
+                          name="FuzzyComparisonFlags"
+                          typeConverter="tcComparisonFlags">1</property>
+                        <property
+                          dataType="System.UInt32"
+                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
+                          name="FuzzyComparisonFlagsEx"
+                          typeConverter="tcComparisonFlagsEx">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Inputs[Fuzzy Lookup Input].Columns[MarketSourceName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="MarketSourceName"
+                      lineageId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -10196,11 +10168,11 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[ADO NET Source.MarketSource]"
+                      refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSource]"
                       dataType="wstr"
                       length="7"
-                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[ADO NET Source.MarketSource]"
-                      name="ADO NET Source.MarketSource">
+                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSource]"
+                      name="MarketSource">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -11435,12 +11407,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]"
+                      refId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
-                      length="1"
-                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]"
-                      name="MarketSourceCode">
+                      length="100"
+                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
+                      name="MarketSourceName">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -11451,7 +11423,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -11621,7 +11593,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task_ADO NET Source\Derived Column.Outputs[Derived Column Output].Columns[DC_MarketSource]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task_ADO NET Source\Derived Column.Outputs[Derived Column Output].Columns[DC_MarketSourceName]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11645,12 +11617,12 @@ where [refTable].[MarketSourceCode] = ?</property>
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Inputs[Lookup Input].Columns[DC_MarketSource]"
+                      refId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Inputs[Lookup Input].Columns[DC_MarketSourceName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="7"
-                      cachedName="DC_MarketSource"
-                      lineageId="Package\Data Flow Task_ADO NET Source\Derived Column.Outputs[Derived Column Output].Columns[DC_MarketSource]">
+                      cachedLength="128"
+                      cachedName="DC_MarketSourceName"
+                      lineageId="Package\Data Flow Task_ADO NET Source\Derived Column.Outputs[Derived Column Output].Columns[DC_MarketSourceName]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -11675,19 +11647,19 @@ where [refTable].[MarketSourceCode] = ?</property>
                   synchronousInputId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]"
+                      refId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Copy Column"
-                      length="1"
-                      lineageId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceCode]"
-                      name="MarketSourceCode"
+                      length="100"
+                      lineageId="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource.Outputs[Lookup Match Output].Columns[MarketSourceName]"
+                      name="MarketSourceName"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">MarketSourceCode</property>
+                          name="CopyFromReferenceColumn">MarketSourceName</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -11741,7 +11713,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[stg_Tigist_Segni_QL]</property>
+                  name="OpenRowset">[dbo].[Stg_Tigist_Segni_QL]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -12534,13 +12506,21 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
                       lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_BorrEmailAddress]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceCode]"
+                      refId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="MarketSourceCode"
+                      cachedLength="128"
+                      cachedName="Insurance_Company"
+                      externalMetadataColumnId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="MarketSourceName"
                       externalMetadataColumnId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketsourceName]"
-                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceCode]" />
+                      lineageId="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -13080,6 +13060,12 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="100"
                       name="MarketsourceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_ADO NET Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Insurance_Company" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -13187,6 +13173,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_Delete_Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{60900C73-DA5D-45C3-A84F-B3DDAFBA750C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -13213,7 +13200,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{86B178FA-868A-4663-BB33-41C2A61A633F}"
+          SQLTask:Connection="{B76C0411-C026-4C98-8D61-474A8490A7A7}"
           SQLTask:SqlStatementSource="DECLARE&#xA;  @PackageID uniqueidentifier  ,&#xA; @PackageName varchar(500)  ,&#xA; @SourceName varchar(100) ,&#xA; @Runtime datetime ,&#xA; @RunBy varchar(100) ,&#xA; @NumberOfRowsInserted int ,&#xA; @LastModifiedDate datetime &#xA;&#xA;   &#xA; SET @PackageID     =  ?&#xA; SET @PackageName    =  ?&#xA; SET @SourceName  =  ?&#xA; SET @Runtime  =  ?&#xA; SET @RunBy    =  ?&#xA; SET @NumberOfRowsInserted    =  ?&#xA; SET @LastModifiedDate  =  ?&#xA; &#xA;&#xA; EXEC uspQuicken_Loans_ETL_Log &#xA; @PackageID    ,&#xA; @PackageName    ,&#xA; @SourceName   ,&#xA; @Runtime  ,&#xA; @RunBy   ,&#xA; @NumberOfRowsInserted   ,&#xA; @LastModifiedDate " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -13273,13 +13260,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F928E6B8-8583-492E-A1FE-5BC054434D86}"
+          SQLTask:Connection="{C673912C-B180-427D-A5A6-8995696DF851}"
           SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA; From [dbo].[Stg_Tigist_Segni_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL&#xA; )&#xA; begin&#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;Select DISTINCT MortgageInsuranceCompany,&#xA; MortgageInsuranceCompany   as Insurance_Company&#xA;From [dbo].[Stg_Tigist_Segni_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL&#xA;end&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Execute SQL Task_Max_LastModified_Date"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{21A0E624-41D1-4E72-8355-1DC1D822CE88}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -13290,21 +13278,12 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F928E6B8-8583-492E-A1FE-5BC054434D86}"
-          SQLTask:SqlStatementSource="IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM  [dbo].[Stg_Tigist_Segni_QL]    &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM  [dbo].[Stg_Tigist_Segni_QL]&#xA;&#x9;&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY,-4,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END"
+          SQLTask:Connection="{C673912C-B180-427D-A5A6-8995696DF851}"
+          SQLTask:SqlStatementSource="IF EXISTS&#xA;(&#xA;SELECT&#xA;   MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;  FROM    &#x9;[dbo].[Stg_Tigist_Segni_QL]&#x9;where sourcename= 'UberWriter'&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT&#xA;   MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;  FROM    &#x9;[dbo].[Stg_Tigist_Segni_QL]&#x9;where sourcename= 'UberWriter'&#x9;&#x9;&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT  DATEADD(YYYY,-120,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ResultBinding
-            SQLTask:ResultName="SourceName"
-            SQLTask:DtsVariableName="User::VarSourceName" />
           <SQLTask:ResultBinding
             SQLTask:ResultName="MAXLastModifiedDate"
             SQLTask:DtsVariableName="User::VarLastModifiedDate" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::VarSourceName"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -13321,7 +13300,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{C9284FD5-CA23-414E-9907-1AC8217CC5C4}"
+      DTS:DTSID="{A5857003-D6F2-443F-A471-504DA04CDBE5}"
       DTS:From="Package\Execute SQL Task_Max_LastModified_Date"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -13376,7 +13355,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{86B178FA-868A-4663-BB33-41C2A61A633F}"
+              SQLTask:Connection="{B76C0411-C026-4C98-8D61-474A8490A7A7}"
               SQLTask:SqlStatementSource="DECLARE @PackageID uniqueidentifier &#xA;       ,@PackageName  Varchar(100) &#xA;    ,@SourceName  Varchar(100) &#xA;    ,@LoadDate  Datetime   &#xA;    ,@RunBy   Varchar(100) &#xA;    ,@ErrorCode  Varchar(100) &#xA;    ,@ErrorDescription  Varchar(Max)  &#xA;SET @PackageID =? &#xA;SET @PackageName =?  &#xA;SET @SourceName   =? &#xA;SET @LoadDate   =? &#xA;SET @RunBy =? &#xA;SET @ErrorCode   =? &#xA;SET @ErrorDescription    =?  &#xA;EXEC  uspQuicken_Loans_ETL_Error_Log&#xA; &#xA;           @PackageID   &#xA;     ,@PackageName    &#xA;     ,@SourceName     &#xA;     ,@LoadDate     &#xA;     ,@RunBy      &#xA;     ,@ErrorCode    &#xA;     ,@ErrorDescription&#xA; &#xA;                                               " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -13440,36 +13419,6 @@ where [refTable].[MarketSourceCode] = ?</property>
               Language="CSharp"
               ReadOnlyVariables="System::PackageName,User::VarFromEmail,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerport,User::VarSubject,User::VarToEmail"
               ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="ST_04c2e61c23c24f3eb2954b0ca6cb281f.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -13689,6 +13638,35 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Settings.get_Default():ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Sett" +
+    "ings")]
+
+namespace ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -13856,34 +13834,35 @@ namespace ST_04c2e61c23c24f3eb2954b0ca6cb281f
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_04c2e61c23c24f3eb2954b0ca6cb281f")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Settings.get_Default():ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties.Sett" +
-    "ings")]
-
-namespace ST_04c2e61c23c24f3eb2954b0ca6cb281f.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -14147,7 +14126,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="237.6,43.2"
+          Size="237.6,41.6"
           Id="Package\Data Flow Task_ADO NET Source"
           TopLeft="64.5833336053399,167.394119623371" />
         <NodeLayout
@@ -14165,21 +14144,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="282.4,41.6"
           Id="Package\Execute SQL Task_Max_LastModified_Date"
-          TopLeft="111.249995579323,38.2777780819827" />
+          TopLeft="111.249995579323,39.144444755537" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="742.869023611283,189.503269725026">
+          TopLeft="742.869023611283,189.103269725026">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-440.685690005944,0"
+              EndConnector="-440.685690005943,0"
               Start="0,0"
-              End="-433.185690005944,0">
+              End="-433.185690005943,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-433.185690005944,0" />
+                    End="-433.185690005943,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14190,30 +14169,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="252.449995579323,79.8777780819827">
+          TopLeft="252.449995579323,80.744444755537">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="606.819028031961,89.3346417446986"
+              EndConnector="606.81902803196,88.467975071144"
               Start="0,0"
-              End="606.819028031961,81.8346417446986">
+              End="606.81902803196,80.967975071144">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.6673208723493" />
+                    End="0,40.233987535572" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.6673208723493"
-                    Point2="0,44.6673208723493"
-                    Point3="4,44.6673208723493" />
+                    Point1="0,40.233987535572"
+                    Point2="0,44.233987535572"
+                    Point3="4,44.233987535572" />
                   <mssgle:LineSegment
-                    End="602.819028031961,44.6673208723493" />
+                    End="602.81902803196,44.233987535572" />
                   <mssgle:CubicBezierSegment
-                    Point1="602.819028031961,44.6673208723493"
-                    Point2="606.819028031961,44.6673208723493"
-                    Point3="606.819028031961,48.6673208723493" />
+                    Point1="602.81902803196,44.233987535572"
+                    Point2="606.81902803196,44.233987535572"
+                    Point3="606.81902803196,48.233987535572" />
                   <mssgle:LineSegment
-                    End="606.819028031961,81.8346417446986" />
+                    End="606.81902803196,80.967975071144" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14224,30 +14203,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="183.38333360534,210.594119623371">
+          TopLeft="183.38333360534,208.994119623371">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="555.016643744897,43.3392157280427"
+              EndConnector="555.016643744897,44.939215728043"
               Start="0,0"
-              End="555.016643744897,35.8392157280427">
+              End="555.016643744897,37.439215728043">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.6696078640214" />
+                    End="0,18.4696078640215" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.6696078640214"
-                    Point2="0,21.6696078640214"
-                    Point3="4,21.6696078640214" />
+                    Point1="0,18.4696078640215"
+                    Point2="0,22.4696078640215"
+                    Point3="4,22.4696078640215" />
                   <mssgle:LineSegment
-                    End="551.016643744897,21.6696078640214" />
+                    End="551.016643744897,22.4696078640215" />
                   <mssgle:CubicBezierSegment
-                    Point1="551.016643744897,21.6696078640214"
-                    Point2="555.016643744897,21.6696078640214"
-                    Point3="555.016643744897,25.6696078640214" />
+                    Point1="551.016643744897,22.4696078640215"
+                    Point2="555.016643744897,22.4696078640215"
+                    Point3="555.016643744897,26.4696078640215" />
                   <mssgle:LineSegment
-                    End="555.016643744897,35.8392157280427" />
+                    End="555.016643744897,37.439215728043" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14363,37 +14342,147 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="257.6,41.6"
+          Id="Package\Data Flow Task_ADO NET Source\OLE DB Destination"
+          TopLeft="33.6111097755264,478.044447851535" />
+        <NodeLayout
           Size="264.8,41.6"
           Id="Package\Data Flow Task_ADO NET Source\Derived Column_ReplaceNull_Dunateak"
           TopLeft="14.0666662030751,329.066668595208" />
-        <NodeLayout
-          Size="267.2,41.6"
-          Id="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource"
-          TopLeft="764.899969700974,226.533334917492" />
         <NodeLayout
           Size="342.4,41.6"
           Id="Package\Data Flow Task_ADO NET Source\Conditional Split_BorrFirstName_BorrLastName_NotTest"
           TopLeft="9.20000039736533,127.133334235616" />
         <NodeLayout
-          Size="280,41.6"
-          Id="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany"
-          TopLeft="748.899970495703,325.000002582868" />
+          Size="183.2,41.6"
+          Id="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource"
+          TopLeft="764.899969700974,226.533334917492" />
         <NodeLayout
           Size="275.2,41.6"
           Id="Package\Data Flow Task_ADO NET Source\Row Count"
           TopLeft="775.999969800316,131.866664503945" />
         <NodeLayout
-          Size="197.6,41.6"
-          Id="Package\Data Flow Task_ADO NET Source\Derived Column"
-          TopLeft="23.2333325054916,221.00000175635" />
+          Size="240.8,41.6"
+          Id="Package\Data Flow Task_ADO NET Source\Conditional Split_LastModifiedDate"
+          TopLeft="679.166639679009,15.6000001239777" />
         <NodeLayout
-          Size="257.6,41.6"
-          Id="Package\Data Flow Task_ADO NET Source\OLE DB Destination"
-          TopLeft="33.6111097755264,478.044447851535" />
+          Size="280,41.6"
+          Id="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany"
+          TopLeft="748.899970495703,325.000002582868" />
         <NodeLayout
           Size="266.4,41.6"
           Id="Package\Data Flow Task_ADO NET Source\ADO NET Source"
           TopLeft="85.8333299226231,16.466666797532" />
+        <NodeLayout
+          Size="197.6,41.6"
+          Id="Package\Data Flow Task_ADO NET Source\Derived Column"
+          TopLeft="23.2333325054916,221.00000175635" />
+        <EdgeLayout
+          Id="Package\Data Flow Task_ADO NET Source.Paths[Row Count Output 1]"
+          TopLeft="913.599969800316,173.466664503945">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-791.566637294824,47.5333372524051"
+              Start="0,0"
+              End="-791.566637294824,40.0333372524051">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.7666686262026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.7666686262026"
+                    Point2="0,23.7666686262026"
+                    Point3="-4,23.7666686262026" />
+                  <mssgle:LineSegment
+                    End="-787.566637294824,23.7666686262026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-787.566637294824,23.7666686262026"
+                    Point2="-791.566637294824,23.7666686262026"
+                    Point3="-791.566637294824,27.7666686262026" />
+                  <mssgle:LineSegment
+                    End="-791.566637294824,40.0333372524051" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_ADO NET Source.Paths[Lookup Match Output]"
+          TopLeft="856.499969700974,268.133334917492">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-710.033303497899,60.933333677716"
+              Start="0,0"
+              End="-710.033303497899,53.433333677716">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.466666838858" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.466666838858"
+                    Point2="0,30.466666838858"
+                    Point3="-4,30.466666838858" />
+                  <mssgle:LineSegment
+                    End="-706.033303497899,30.466666838858" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-706.033303497899,30.466666838858"
+                    Point2="-710.033303497899,30.466666838858"
+                    Point3="-710.033303497899,34.466666838858" />
+                  <mssgle:LineSegment
+                    End="-710.033303497899,53.433333677716" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-403.2080384677,35.466666838858,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_ADO NET Source.Paths[KEEP]"
+          TopLeft="799.566639679009,57.2000001239777">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-619.166639281644,69.9333341116379"
+              Start="0,0"
+              End="-619.166639281644,62.4333341116379">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.966667055819" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.966667055819"
+                    Point2="0,34.966667055819"
+                    Point3="-4,34.966667055819" />
+                  <mssgle:LineSegment
+                    End="-615.166639281644,34.966667055819" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-615.166639281644,34.966667055819"
+                    Point2="-619.166639281644,34.966667055819"
+                    Point3="-619.166639281644,38.966667055819" />
+                  <mssgle:LineSegment
+                    End="-619.166639281644,62.4333341116379" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-321.428241515822,39.966667055819,23.68984375,9.2705078125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_ADO NET Source.Paths[Fuzzy Lookup Output]"
           TopLeft="888.899970495703,366.600002582868">
@@ -14497,80 +14586,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task_ADO NET Source.Paths[Row Count Output 1]"
-          TopLeft="913.599969800316,173.466664503945">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-791.566637294824,47.5333372524051"
-              Start="0,0"
-              End="-791.566637294824,40.0333372524051">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.7666686262026" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.7666686262026"
-                    Point2="0,23.7666686262026"
-                    Point3="-4,23.7666686262026" />
-                  <mssgle:LineSegment
-                    End="-787.566637294824,23.7666686262026" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-787.566637294824,23.7666686262026"
-                    Point2="-791.566637294824,23.7666686262026"
-                    Point3="-791.566637294824,27.7666686262026" />
-                  <mssgle:LineSegment
-                    End="-791.566637294824,40.0333372524051" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_ADO NET Source.Paths[Lookup Match Output]"
-          TopLeft="898.499969700974,268.133334917492">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-752.033303497898,60.9333336777156"
-              Start="0,0"
-              End="-752.033303497898,53.4333336777156">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.4666668388578" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.4666668388578"
-                    Point2="0,30.4666668388578"
-                    Point3="-4,30.4666668388578" />
-                  <mssgle:LineSegment
-                    End="-748.033303497898,30.4666668388578" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-748.033303497898,30.4666668388578"
-                    Point2="-752.033303497898,30.4666668388578"
-                    Point3="-752.033303497898,34.4666668388578" />
-                  <mssgle:LineSegment
-                    End="-752.033303497898,53.4333336777156" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-424.208038467699,35.4666668388578,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="240.8,41.6"
-          Id="Package\Data Flow Task_ADO NET Source\Conditional Split_LastModifiedDate"
-          TopLeft="679.166639679009,15.6000001239777" />
-        <EdgeLayout
           Id="Package\Data Flow Task_ADO NET Source.Paths[ADO NET Source Output]"
           TopLeft="352.233329922623,36.8333334607548">
           <EdgeLayout.Curve>
@@ -14592,70 +14607,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_ADO NET Source.Paths[KEEP]"
-          TopLeft="799.566639679009,57.2000001239777">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-619.166639281644,69.9333341116379"
-              Start="0,0"
-              End="-619.166639281644,62.4333341116379">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.966667055819" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.966667055819"
-                    Point2="0,34.966667055819"
-                    Point3="-4,34.966667055819" />
-                  <mssgle:LineSegment
-                    End="-615.166639281644,34.966667055819" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-615.166639281644,34.966667055819"
-                    Point2="-619.166639281644,34.966667055819"
-                    Point3="-619.166639281644,38.966667055819" />
-                  <mssgle:LineSegment
-                    End="-619.166639281644,62.4333341116379" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-321.428241515822,39.966667055819,23.68984375,9.2705078125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[MarketLookupTable]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany">
+    design-time-name="Package\Data Flow Task_ADO NET Source\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -14668,7 +14624,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task_ADO NET Source\OLE DB Destination">
+    design-time-name="Package\Data Flow Task_ADO NET Source\Lookup_MarketSource">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[MarketLookupTable]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task_ADO NET Source\Fuzzy Lookup_MorgageInsuranceCompany">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

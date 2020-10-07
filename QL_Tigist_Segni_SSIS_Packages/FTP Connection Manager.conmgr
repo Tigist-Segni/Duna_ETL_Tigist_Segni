@@ -1,22 +1,30 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:DelayValidation="True"
   DTS:ObjectName="FTP Connection Manager"
   DTS:DTSID="{2620F6B2-ED53-4FEB-A68B-8D81B3127CF7}"
   DTS:CreationName="FTP">
   <DTS:PropertyExpression
-    DTS:Name="ServerPassword">@[$Project::FTPConnectionManager_ServerPassword1]</DTS:PropertyExpression>
+    DTS:Name="ChunkSize">1000</DTS:PropertyExpression>
   <DTS:PropertyExpression
-    DTS:Name="UsePassiveMode">@[$Project::FTPConnectionManager_UsePassiveMode]</DTS:PropertyExpression>
+    DTS:Name="ServerName">"ftp.drivehq.com"</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPassword">"m96t4VvhetYuck5"</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPort">21</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerUserName">"dunatek"</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="ftp.drivehq.com:21">
       <DTS:FtpConnection
         DTS:ServerName="ftp.drivehq.com"
         DTS:ServerUserName="dunatek"
+        DTS:ChunkSize="1000"
         DTS:UsePassiveMode="True">
         <DTS:Property
           DTS:Name="ServerPassword"
-          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAABCZI+GjXqfpJkH1LsnFOvyjuI6sXIRIRQ0zUPnmKYV4AAAAAAOgAAAAAIAACAAAAD/BXUJMPuCIIBf0e+wSu6QTTVuk5oGtVRb+snU1GZObZAAAAC9uzY1ttozxnmPt8ym/Om0UyaxppQX66EzoknKUH00YRvkS8fRYSjOMyNDgm1QzpXDrLl8kD09LxD3fAFQTofDhSCSLB1UCbyChmbjBd2MHO84IkBY1fAWkWil3wY3fZI/oDfQ4IlmI8r+mHWzJWOW6mdubgoay+USAl+PnEH1O5klGJkOPJQYtLEkLgm/CZpAAAAAriFWSPd/7JbJnZueGtFHH5XiwKTU4XPsiEZY5pzI9MO6lpREnIJmxPUfzXj31a7dBm7fXltP97SC5+b+hYoouQ==</DTS:Property>
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4zjHRtt+TkWYlVXq4nfTfQAAAAACAAAAAAAQZgAAAAEAACAAAADROP3OBTdvL7zqehdObBMgzpsyYhccyOzWuFtZc3306gAAAAAOgAAAAAIAACAAAADekgZt+X13y3I4yu+WFSUUfqL+eJ+rg0dak4CV9poxo5AAAADh12EBuCpUfsmFP48DraroyIRcQbjhruWXk6BexRme/bAjh+KSF7abeB/RVrblqSRqeKOaOiDIcOX4fDAXfHbGleuZYmmnQQ9j6uanp/riEC2DqXnHW4BXtZRxOEyxQot3PGWJrGK2SAHXq/DbYSpmbppjMKZW86VRNVV334vAtY9xlunwKK3Oyyly0ievk4xAAAAAyTXM//u6UJeptgxjMBftHCUQfcHtJan902r8b+5aZrLru72myLLNM89X9EOGppmqsNnOtuSfF2arNss1wAgk/w==</DTS:Property>
       </DTS:FtpConnection>
     </DTS:ConnectionManager>
   </DTS:ObjectData>

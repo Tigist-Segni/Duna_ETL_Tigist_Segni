@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:DelayValidation="True"
   DTS:ObjectName="FFCM_MIC"
   DTS:DTSID="{40E0211D-1F3C-45BB-B700-F340D453F29F}"
   DTS:CreationName="FLATFILE">
